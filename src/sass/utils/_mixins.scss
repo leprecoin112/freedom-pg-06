@@ -1,0 +1,29 @@
+@mixin flexCentered($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexGapWrap($type: flex, $gap, $wrap: nowrap) {
+  display: $type;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
