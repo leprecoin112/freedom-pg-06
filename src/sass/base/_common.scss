@@ -1,1 +1,62 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@font-face {
+    font-family: "CeraPro";
+    src: url("../fonts/CeraProLight.eot");
+    src: url("../fonts/CeraProLight.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/CeraProLight.woff") format("woff"),
+        url("../fonts/CeraProLight.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "CeraPro";
+    src: url("../fonts/CeraProRegular.eot");
+    src: url("../fonts/CeraProRegular.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/CeraProRegular.woff") format("woff"),
+        url("../fonts/CeraProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "CeraPro";
+    src: url("../fonts/CeraProMedium.eot");
+    src: url("../fonts/CeraProMedium.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/CeraProMedium.woff") format("woff"),
+        url("../fonts/CeraProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "CeraPro";
+
+    src:
+        url("../fonts/CeraProBold.woff") format("woff"),
+        url("../fonts/CeraProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("../fonts/CaviarDreamsRegular.eot");
+    src: url("../fonts/CaviarDreamsRegular.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/CaviarDreamsRegular.woff") format("woff"),
+        url("../fonts/CaviarDreamsRegular.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("../fonts/CaviarDreamsBold.eot");
+    src: url("../fonts/CaviarDreamsBold.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/CaviarDreamsBold.woff") format("woff"),
+        url("../fonts/CaviarDreamsBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
