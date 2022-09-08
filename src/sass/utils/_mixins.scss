@@ -1,9 +1,11 @@
+//Міксин для центрування флекс елемента
 @mixin flexCentered($type: flex) {
   display: $type;
   justify-content: center;
   align-items: center;
 }
 
+//Міксин для побудови сітки
 @mixin flexGapWrap($type: flex, $gap, $wrap: nowrap) {
   display: $type;
   gap: $gap;
