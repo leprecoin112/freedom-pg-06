@@ -48,6 +48,7 @@
 }
 .tel__link,
 .mail__link {
+  font-family: "CeraPro";
   font-style: normal;
   color: $secondaryTextColor;
 }
@@ -64,7 +65,7 @@
 
 @include tablet {
   .footer__wrapper {
-    padding: 32px;
+    padding: 32px 0px;
   }
 
   .footer__logo {
@@ -96,7 +97,7 @@
 @include desktop {
   .footer__wrapper {
     display: flex;
-    padding: 40px 32px;
+    padding: 40px 0px;
   }
 
   .footer__logo {
