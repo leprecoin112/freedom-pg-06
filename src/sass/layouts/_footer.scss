@@ -1,0 +1,117 @@
+/*=================== FOOTER =========================*/
+.footer {
+  background-color: $secondaryBgColor;
+}
+
+.footer__img {
+  width: 192px;
+  height: 48px;
+}
+
+.footer__logo {
+  margin-bottom: 19px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.social__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.tel__text {
+  margin-bottom: 8px;
+}
+
+.mail__text {
+  margin-bottom: 8px;
+}
+
+.tel__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.tel__text,
+.mail__text,
+.footer__link,
+.social__link {
+  @include fonts(400, 16, 20.11);
+
+  color: $primaryTextColor;
+}
+
+.tel__link,
+.mail__link {
+  color: $secondaryTextColor;
+}
+
+.footer__list {
+  margin-bottom: 24px;
+}
+
+.social,
+.mail {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__wrapper {
+    padding: 32px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@include tablet {
+  .footer__wrapper {
+    padding: 32px;
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__content {
+    display: flex;
+  }
+
+  .footer__list {
+    text-align: start;
+    margin-bottom: 0;
+    margin-right: 52px;
+  }
+
+  .social {
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  .footer__contacts {
+    text-align: end;
+    flex: 1 1 auto;
+  }
+}
+
+@include desktop {
+  .footer__wrapper {
+    display: flex;
+    padding: 40px 32px;
+  }
+
+  .footer__logo {
+    margin-right: 277px;
+  }
+
+  .footer__list {
+    margin-right: 103px;
+  }
+
+  .social {
+    margin-right: 161px;
+  }
+}
