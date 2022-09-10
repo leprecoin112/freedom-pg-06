@@ -101,7 +101,7 @@
   }
 }
 
-.take-order-hero__text:not(:last-child) {
+.take-order-hero__item:not(:last-child) {
   margin-bottom: 16px;
   @include tablet {
     margin-bottom: 0;
