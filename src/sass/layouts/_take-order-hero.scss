@@ -1,6 +1,15 @@
+.take-order-hero__container {
+  @include desktop {
+    padding-left: 149px;
+  }
+}
 .take-order-hero {
   padding-top: 40px;
   padding-bottom: 40px;
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .take-order-hero__title {
@@ -45,6 +54,7 @@
   @include tablet {
     flex-basis: calc((100% - 32px) / 2);
     height: 158px;
+    max-width: 100%;
     margin-bottom: 0;
     background-image: url(../images/take-order-hero/tab-takeorder1-1x.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -54,6 +64,7 @@
     }
   }
   @include desktop {
+    width: 555px;
     height: 400px;
     background-image: url(../images/take-order-hero/desk-takeorder1-1x.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -69,8 +80,12 @@
   }
 }
 .take-order-hero__textlist {
+  @include tablet {
+    padding-right: 35px;
+  }
   @include desktop {
     margin-bottom: 60px;
+    padding-right: 150px;
   }
 }
 
@@ -80,6 +95,9 @@
   color: $primaryTextColor;
   @include tablet {
     font-weight: 400;
+  }
+  @include desktop {
+    @include fonts(300, 18, 23, null);
   }
 }
 
@@ -104,6 +122,9 @@
 .take-order-hero__galeryitem {
   width: 203px;
   height: 203px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   @include desktop {
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
     border-radius: 0px 72px 72px 0px;
@@ -137,5 +158,47 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/take-order-hero/galery-image3-2x.jpg);
     }
+  }
+}
+.take-order-hero__decorleft {
+  position: absolute;
+  top: 203px;
+  left: -29px;
+  width: 74px;
+  height: 74px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 35px 0px;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: block;
+    top: 0px;
+    left: 35px;
+    width: 82px;
+    height: 78px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+.take-order-hero__decorright {
+  @include tablet {
+    position: absolute;
+    top: -32px;
+    right: 32px;
+    width: 71px;
+    height: 64px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 35px 0px 0px;
+    transform: rotate(180deg);
+  }
+  @include desktop {
+    top: -40px;
+    right: 32px;
+    width: 83px;
+    height: 137px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(90deg);
   }
 }
