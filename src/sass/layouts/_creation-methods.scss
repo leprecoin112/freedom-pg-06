@@ -16,7 +16,7 @@
     color: #2B2B2B;
 
     margin-top: 16px;
-    
+   
 }
 /*li{
 position: relative;
@@ -39,10 +39,10 @@ section.section__pre-title{
    
 }
 
-.section__bg{
+.modeling-creations__background{
+   min-width: 280px;
+    min-height: 164px;
     margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
     
     background-size: 280px 164px;
     
@@ -60,7 +60,9 @@ section.section__pre-title{
         }
     
         @media screen and(min-width:768px) {
-           /* margin-right: 34px;*/
+            margin-left: 34px;
+            margin-right: 0;
+        
            justify-content: space-between;
             background-image:
                 url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
@@ -101,12 +103,13 @@ section.section__pre-title{
         }
 }
 .modeling {
-    margin-top: 40px;
+        margin-top: 40px;
         margin-left: 20px;
         margin-right: 20px;
     @media screen and(min-width:768px) {
         display: flex;
-        margin-left: 34px;
+        
+        flex: 1 1;
     }
 }
 .section__pre-title{

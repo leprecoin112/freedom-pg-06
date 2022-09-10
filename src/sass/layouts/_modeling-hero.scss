@@ -1,4 +1,4 @@
-.content{
+.modeling-hero-list__text{
     font-family: 'Cera Pro';
     font-style: normal;
    font-weight: 300;
@@ -17,7 +17,7 @@
   }
    
 }
-.list {
+.modeling-hero-list__item {
     list-style: none;
 }
 section{
@@ -27,7 +27,7 @@ section{
     width: 100%;
    
 }
-.modeling-hero__item{
+.modeling-hero__list{
 @media screen and(min-width:768px) {
         width: 515px;
         height: 100px;
