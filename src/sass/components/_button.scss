@@ -23,4 +23,12 @@
     @include tablet{
         width: 277px;
     }
+
+    &--order-form {
+        width: 177px;
+    
+        @media screen and (max-width: 767px){
+            width: 280px;
+        }
+    }             
 }
