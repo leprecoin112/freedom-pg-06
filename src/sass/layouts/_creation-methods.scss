@@ -1,12 +1,33 @@
-.modeling-creations {
-    /*margin-top: 40px;
+
+.modeling-creations>.container {
+    margin-top: 40px;
     margin-left: 20px;
-    margin-right: 20px;*/
+    margin-right: 20px;
+
+    @media screen and(min-width:768px) {
+        display: flex;
+
+        flex: 1 1;
+    }
+    
+}
+
+.modeling-creations__pre-title {
+    
+
+    @media screen and(min-width: 1440px) {
+        margin-top: 100px;
+        margin-bottom: 8px;
+
+    }
+}
+.modeling-creations {
+    
     @media screen and(min-width:768px){
         margin: right 0;
     }
 
-&__content {
+.modeling-creations__content {
     font-family: 'Cera Pro';
     font-style: normal;
     font-weight: 300;
@@ -26,14 +47,6 @@ position: relative;
 .list {
     list-style: none;
 }
-section.section__pre-title{
-    margin-top: 40px;
-    @media screen and(min-width: 1440px){
-      margin-top: 100px;
-     margin-bottom: 8px;
-        
-    }
-}
 
 
    
@@ -43,6 +56,7 @@ section.section__pre-title{
    min-width: 280px;
     min-height: 164px;
     margin-top: 40px;
+    flex: 1 1;
     
     background-size: 280px 164px;
     
@@ -60,7 +74,7 @@ section.section__pre-title{
         }
     
         @media screen and(min-width:768px) {
-            margin-left: 34px;
+            /*margin-left: 34px;*/
             margin-right: 0;
         
            justify-content: space-between;
@@ -68,6 +82,7 @@ section.section__pre-title{
                 url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
     
             background-size: 246px 144px;
+            /*background-position: left 50vw;*/
     
             @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
@@ -102,16 +117,7 @@ section.section__pre-title{
     
         }
 }
-.modeling {
-        margin-top: 40px;
-        margin-left: 20px;
-        margin-right: 20px;
-    @media screen and(min-width:768px) {
-        display: flex;
-        
-        flex: 1 1;
-    }
-}
+
 .section__pre-title{
     font-family: 'Cera Pro';
         font-style: normal;
