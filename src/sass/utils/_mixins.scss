@@ -95,8 +95,8 @@
 
 // -------------TRANSITION MIXIN --------------
 @mixin transition($property, $sproperty: false, $tproperty: false) {
-  $duration: var(--dur-time);
-  $timing-function: var(--bezier);
+  $duration: $dur-time;
+  $timing-function: $time-fun;
 
   @if $sproperty {
     @if $tproperty {
