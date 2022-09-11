@@ -5,6 +5,14 @@
 .contacts-hero__container {
     position: relative;
 
+    @include mobile {
+        text-align: center;
+    }
+
+    @include tablet {
+        text-align: left;
+    }
+
     @include desktop {
         padding-left: 149px;
         padding-right: 149px;
@@ -111,6 +119,14 @@
         align-items: center;
         gap: 8px;
 
+        @include mobile {
+            justify-content: center;
+        }
+
+        @include tablet {
+            justify-content: start;
+        }
+
         @include desktop {
             flex-direction: column;
             align-items: flex-start;
@@ -120,11 +136,8 @@
 }
 
 .contacts-hero__emoji {
-    width: 22px;
-    height: 22px;
-
+    font-size: 22px;
     @include desktop {
-        width: 49px;
-        height: 49px;
+        font-size: 49px;
     }
 }
