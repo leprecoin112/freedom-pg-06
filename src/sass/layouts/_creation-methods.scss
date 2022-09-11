@@ -1,8 +1,8 @@
 
 .modeling-creations>.container {
-    margin-top: 40px;
+  /*  margin-top: 40px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px;*/
 
     @media screen and(min-width:768px) {
         display: flex;
@@ -12,15 +12,15 @@
     
 }
 
-.modeling-creations__pre-title {
+/*.modeling-creations__pre-title {
     
 
     @media screen and(min-width: 1440px) {
-        margin-top: 100px;
+       /* margin-top: 100px;
         margin-bottom: 8px;
 
     }
-}
+}*/
 .modeling-creations {
     
     @media screen and(min-width:768px){
@@ -51,8 +51,33 @@ position: relative;
 
    
 }
-
-.modeling-creations__background{
+.modeling-creations__list{
+    width: 100%;
+    
+    @media screen and(min-width:1440px) {
+        width: 1376px;
+      margin-right: 0;
+      background-size: 555px 301px;
+      background-repeat: no-repeat;
+      background-position: right 50vw;
+      background-image:
+         url(/src/images/modeling-creation/bg-creations-desk-jpg.jpg);
+    
+        
+    
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .modeling-creations {
+                    background-image:
+                        url(/src/images/modeling-creation/bg-creations-desk-2x.jpg);
+                }
+            }
+    
+    }
+}
+/*.modeling-creations__background{
    min-width: 280px;
     min-height: 164px;
     margin-top: 40px;
@@ -74,7 +99,7 @@ position: relative;
         }
     
         @media screen and(min-width:768px) {
-            /*margin-left: 34px;*/
+            /*margin-left: 34px;
             margin-right: 0;
         
            justify-content: space-between;
@@ -82,7 +107,7 @@ position: relative;
                 url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
     
             background-size: 246px 144px;
-            /*background-position: left 50vw;*/
+            /*background-position: left 50vw;
     
             @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
@@ -95,7 +120,7 @@ position: relative;
             }
         }
     
-        @media screen and(min-width:1440px) {
+      /*  @media screen and(min-width:1440px) {
             margin-right: 0;
             background-image:
                 url(/src/images/modeling-creation/bg-creations-desk-jpg.jpg);
@@ -116,7 +141,7 @@ position: relative;
     
     
         }
-}
+}*/
 
 .section__pre-title{
     font-family: 'Cera Pro';
