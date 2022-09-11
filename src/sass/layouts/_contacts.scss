@@ -1,0 +1,129 @@
+.contacts {
+    font-family: "CeraPro", "CaviarDreams", sans-serif;
+}
+
+.contacts__container {
+    position: relative;
+    @include desktop {
+            padding-left: 149px;
+            padding-right: 149px;
+        }
+}
+
+.contacts__title {
+    margin-bottom: 16px;
+    @include fonts(700, 24, 30, null, uppercase);
+    color: $secondaryTextColor;
+
+    @include tablet {
+        @include fonts(700, 36, 45, null, uppercase);
+        text-align: start;
+    }
+
+    @include desktop {
+        @include fonts(null, 48, 60, null, uppercase);
+        margin-bottom: 24px;
+    }
+}
+
+.contacts__content {
+    @include tablet {
+        display: flex;
+        gap: 32px;
+    }
+}
+
+.contacts__decor {
+    position: absolute;
+    z-index: -1;
+    width: 74px;
+    height: 74px;
+    background-color: $primaryBgColor;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+
+    &--left {
+        top: 203px;
+        left: -29px;
+        border-radius: 0px 0px 35px 0px;
+
+        @include tablet {
+            display: none;
+        }
+
+        @include desktop {
+            display: block;
+            top: 0px;
+            left: 35px;
+            width: 82px;
+            height: 78px;
+            border-radius: 0px 0px 72px 0px;
+        }
+    }
+
+    &--right {
+        display: none;
+        width: 71px;
+        height: 64px;
+        top: -32px;
+        right: 32px;
+        border-radius: 0px 35px 0px 0px;
+        transform: rotate(180deg);
+        box-shadow: -20px -20px 80px rgba(0, 0, 0, 0.1);
+
+        @include tablet {
+            display: block;
+        }
+
+        @include desktop {
+            top: -40px;
+            width: 83px;
+            height: 137px;
+            border-radius: 0px 0px 72px 0px;
+            transform: rotate(90deg);
+            box-shadow: 20px -20px 80px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.contacts__descr {
+    color: $primaryTextColor;
+    @include fonts (400, 16, 20);
+
+    @include tablet {
+        width: 336px;
+    }
+
+    @include desktop {
+        width: 515px;
+        @include fonts (300, 18, 23);
+    }
+}
+
+.contacts__text {
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &:last-child {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @include desktop {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 56px;
+        }
+    }
+}
+
+.contacts__emoji {
+    width: 22px;
+    height: 22px;
+
+    @include desktop {
+        width: 49px;
+        height: 49px;
+    }
+}
