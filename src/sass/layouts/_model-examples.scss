@@ -1,0 +1,144 @@
+//--імітація хедера--//
+.take-printing__container {
+  // padding-bottom: 70px;//tablet
+  // padding-bottom: 140px;//desk
+  position: relative;
+}
+
+.figure-priting__left {
+  @include desktop {
+    position: absolute;
+    width: 82px;
+    height: 78px;
+    left: 32px;
+    top: -6px;
+    background: $primaryBgColor;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 72px 0;
+  }
+}
+.figure-priting__right {
+  @include tablet {
+    position: absolute;
+    top: -18px;
+    right: 32px;
+    width: 71px;
+    height: 63px;
+    background: $primaryBgColor;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 0 35px;
+  }
+
+  @include desktop {
+    width: 137px;
+    height: 83px;
+    top: -39px;
+
+    right: 32px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 0 72px;
+
+    // border-radius: 0 72px 0 0
+  }
+}
+
+.section__title-printing {
+  margin-left: calc((100% - (130px + 130px + 20px)) / 2);
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+
+  @include tablet {
+    margin-bottom: 16px;
+    margin-left: 0;
+    font-size: 36px;
+    line-height: calc(45 / 36);
+  }
+
+  @include desktop {
+    margin-left: 117px;
+    margin-bottom: 24px;
+    @include fonts(null, 48, 60, null, null);
+
+    // font-size: 48px;
+    // line-height: calc(60 / 48);
+  }
+}
+
+.model-examples__list {
+  display: flex;
+  gap: 32px;
+
+  @media screen and(max-width:767px) {
+    row-gap: 16px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+.model-examples__item {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    width: calc((100% - 20px) / 2);
+    &:nth-child(2n + 1) {
+      justify-content: end;
+    }
+  }
+}
+
+.model-examples__block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+
+  width: 130px;
+  height: 158px;
+
+  background: $primaryBgColor;
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
+    inset -1px -1px 16px $primaryBgColor;
+  border-radius: 50px 0px;
+
+  @include tablet {
+    width: 152px;
+    height: 182px;
+  }
+
+  @include desktop {
+    justify-content: center;
+    width: 320px;
+    height: 382px;
+  }
+}
+
+.model-examples__pretitle {
+  text-align: center;
+  color: $secondaryTextColor;
+  margin-top: 10px;
+
+  font-family: 'CeraPro';
+  @include fonts(null, 14, 18, null, null);
+  // font-size: 14px;
+  // line-height: calc(18 / 14);
+  height: 45px;
+
+  @include tablet {
+    display: block;
+    margin-top: 20px;
+    // @include fonts(null, 14, 18, null, null);
+    // font-size: 14px;
+    // line-height: calc(18 / 14);
+    height: 45px;
+  }
+
+  @include desktop {
+    @include fonts(null, 18, 23, null, null);
+
+    // font-size: 18px;
+    // line-height: calc(23 / 18);
+  }
+}
