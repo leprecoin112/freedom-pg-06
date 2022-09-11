@@ -7,15 +7,15 @@
   position: relative;
 
   @include mobile {
-    width: 480px;
+    max-width: 480px;
   }
 
   @include tablet {
     padding-left: 32px;
     padding-right: 32px;
-    width: 768px;
+    max-width: 768px;
   }
   @include desktop {
-    width: 1440px;
+    max-width: 1440px;
   }
 }
