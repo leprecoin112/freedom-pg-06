@@ -1,102 +1,94 @@
 .video {
-    position: relative;
-    width: 100%;
-    height: 171px;
-    margin-bottom: 16px;
-    overflow: hidden;
-    z-index: 3;
-    flex-grow: 0;
-    border-radius: 15px;
+  position: relative;
+  width: 100%;
+  height: 171px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  z-index: 3;
+  flex-grow: 0;
+  border-radius: 15px;
 
-    @include mobile {
-        margin-left: auto;
-        margin-right: auto;
-        width: 280px;
-        height: 171px;
-    }
+  @include tablet {
+    margin: 0;
+    width: 336px;
+    height: 280px;
+  }
 
-    @include tablet {
-        margin: 0;
-        width: 336px;
-        height: 280px;
-    }
-
-    @include desktop {
-        width: 555px;
-        height: 315px;
-    }
+  @include desktop {
+    width: 555px;
+    height: 315px;
+  }
 }
 
 .video__content {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .video__overlay {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/contacts/overlay-mob.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/contacts/overlay-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/contacts/overlay-mob@2x.jpg);
+    background-image: url(../images/contacts/overlay-mob@2x.jpg);
+  }
+
+  @include tablet {
+    background-image: url(../images/contacts/overlay-tab.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/overlay-tab@2x.jpg);
     }
+  }
 
-    @include tablet {
-        background-image: url(../images/contacts/overlay-tab.jpg);
+  @include desktop {
+    background-image: url(../images/contacts/overlay-desk.jpg);
 
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/contacts/overlay-tab@2x.jpg);
-        }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/overlay-desk@2x.jpg);
     }
-
-    @include desktop {
-        background-image: url(../images/contacts/overlay-desk.jpg);
-
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/contacts/overlay-desk@2x.jpg);
-        }
-    }
+  }
 }
 
-
 .video__button {
-    display: block;
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    top: 50%;
-    width: 67px;
-    height: 67px;
-    transform: translate(-50%, -50%);
-    fill-opacity: 0.8;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  width: 67px;
+  height: 67px;
+  transform: translate(-50%, -50%);
+  fill-opacity: 0.8;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        fill-opacity: 1;
-    }
+  &:hover,
+  &:focus {
+    fill-opacity: 1;
+  }
 
-    @include desktop {
-        width: 77px;
-        height: 77px;
-    }
+  @include desktop {
+    width: 77px;
+    height: 77px;
+  }
 
-    cursor: pointer;
+  cursor: pointer;
 }
