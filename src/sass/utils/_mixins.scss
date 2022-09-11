@@ -55,48 +55,48 @@
 // }
 
 // Delete unit from incoming value
-// @function strip-unit($number) {
-//   @if type-of($number) == 'number' and not unitless($number) {
-//     @return calc($number / ($number * 0 + 1));
-//   }
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return calc($number / ($number * 0 + 1));
+  }
 
 //   @return $number;
 // }
 
-// @function decimal-round($number, $digits: 0, $mode: round) {
-//   $n: 1;
-//   // $number must be a number
-//   @if type-of($number) != number {
-//     @warn '#{ $number } is not a number.';
-//     @return $number;
-//   }
-//   // $digits must be a unitless number
-//   @if type-of($digits) != number {
-//     @warn '#{ $digits } is not a number.';
-//     @return $number;
-//   } @else if not unitless($digits) {
-//     @warn '#{ $digits } has a unit.';
-//     @return $number;
-//   }
-//   @for $i from 1 through $digits {
-//     $n: $n * 10;
-//   }
-//   @if $mode == round {
-//     @return round($number * $n) / $n;
-//   } @else if $mode == ceil {
-//     @return ceil($number * $n) / $n;
-//   } @else if $mode == floor {
-//     @return floor($number * $n) / $n;
-//   } @else {
-//     @warn '#{ $mode } is undefined keyword.';
-//     @return $number;
-//   }
-// }
+@function decimal-round($number, $digits: 0, $mode: round) {
+  $n: 1;
+  // $number must be a number
+  @if type-of($number) != number {
+    @warn '#{ $number } is not a number.';
+    @return $number;
+  }
+  // $digits must be a unitless number
+  @if type-of($digits) != number {
+    @warn '#{ $digits } is not a number.';
+    @return $number;
+  } @else if not unitless($digits) {
+    @warn '#{ $digits } has a unit.';
+    @return $number;
+  }
+  @for $i from 1 through $digits {
+    $n: $n * 10;
+  }
+  @if $mode == round {
+    @return calc(round($number * $n) / $n);
+  } @else if $mode == ceil {
+    @return calc(ceil($number * $n) / $n);
+  } @else if $mode == floor {
+    @return calc(floor($number * $n) / $n);
+  } @else {
+    @warn '#{ $mode } is undefined keyword.';
+    @return $number;
+  }
+}
 
 // -------------TRANSITION MIXIN --------------
 @mixin transition($property, $sproperty: false, $tproperty: false) {
-  $duration: var(--dur-time);
-  $timing-function: var(--bezier);
+  $duration: $dur-time;
+  $timing-function: $time-fun;
 
   @if $sproperty {
     @if $tproperty {
