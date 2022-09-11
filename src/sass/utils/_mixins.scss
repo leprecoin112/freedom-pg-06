@@ -43,16 +43,16 @@
   }
 }
 // Calculating line-height value to multiplier
-// @function setLineHeight($lh, $fs) {
-//   $lh-no-units: strip-unit($lh);
-//   $fs-no-units: strip-unit($fs);
+@function setLineHeight($lh, $fs) {
+  $lh-no-units: strip-unit($lh);
+  $fs-no-units: strip-unit($fs);
 
-//   $lh-value: calc($lh-no-units / $fs-no-units);
+  $lh-value: calc($lh-no-units / $fs-no-units);
 
-//   $line-height: decimal-round($lh-value, 2);
+  $line-height: decimal-round($lh-value, 2);
 
-//   @return $line-height;
-// }
+  @return $line-height;
+}
 
 // Delete unit from incoming value
 @function strip-unit($number) {
@@ -60,8 +60,8 @@
     @return calc($number / ($number * 0 + 1));
   }
 
-//   @return $number;
-// }
+  @return $number;
+}
 
 @function decimal-round($number, $digits: 0, $mode: round) {
   $n: 1;
