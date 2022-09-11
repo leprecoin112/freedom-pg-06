@@ -166,15 +166,16 @@ section {
 .atatch {
     position: absolute;
     content: "";
-    bottom: 15px;
+    bottom: 75px;
     left: 242px;
 
     @include mobile {
-        bottom: 15px;
+        bottom: 55px;
         left: 360px;
     }
     @include desktop {
         left: 515px;
+        bottom: 35px;
     }
 }
 
