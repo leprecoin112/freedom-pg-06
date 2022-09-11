@@ -75,56 +75,56 @@
 
 .section__title-primary {
   font-family: 'Cera Pro';
-  @include font(700, 24, 30, null, uppercase);
+  @include fonts(700, 24, 30, null, uppercase);
   color: $secondaryTextColor;
 
   @include tablet {
-    @include font(700, 36, 45, null, uppercase);
+    @include fonts(700, 36, 45, null, uppercase);
   }
 
   @include desktop {
-    @include font(700, 48, 60, null, uppercase);
+    @include fonts(700, 48, 60, null, uppercase);
   }
 }
 
 .section__title-secondary {
   font-family: 'Cera Pro';
-  @include font(700, 18, 23, null, uppercase);
+  @include fonts(700, 18, 23, null, uppercase);
   color: $secondaryTextColor;
 
   @include tablet {
-    @include font(700, 24, 30, null, uppercase);
+    @include fonts(700, 24, 30, null, uppercase);
   }
 
-  @include desctop {
-    @include font(700, 36, 45, null, uppercase);
+  @include desktop {
+    @include fonts(700, 36, 45, null, uppercase);
   }
 }
 
 .section__title-xs-font {
   font-family: 'Cera Pro';
-  @include font(700, 16, 20, null, uppercase);
+  @include fonts(700, 16, 20, null, uppercase);
   color: $secondaryTextColor;
 
   @include tablet {
-    @include font(700, 24, 30, null, uppercase);
+    @include fonts(700, 24, 30, null, uppercase);
   }
 
-  @include desctop {
-    @include font(700, 36, 45, null, uppercase);
+  @include desktop {
+    @include fonts(700, 36, 45, null, uppercase);
   }
 }
 
 .section-main__hero-title {
   font-family: 'Caviar Dreams';
-  @include font(400, 18, 21, null, uppercase);
+  @include fonts(400, 18, 21, null, uppercase);
   color: $primaryTextColor;
 
   @include tablet {
-	@include font(400, 24, 28, null, uppercase);
+	@include fonts(400, 24, 28, null, uppercase);
   }
 
   @include desktop {
-	@include font(400, 48, 56, null, uppercase);
+	@include fonts(400, 48, 56, null, uppercase);
   }
 }
