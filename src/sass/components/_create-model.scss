@@ -1,6 +1,19 @@
+.content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include tablet {
+	justify-content: left;
+  }
+
+}
+
 .section__title-xs-font {
-  margin-bottom: 16px;
+  display: block;
   width: 280px;
+  padding-right: 20px;
+  margin-bottom: 16px;
 
   @include tablet {
     width: 640px;
@@ -17,10 +30,13 @@
 .create-model__list {
   width: 280px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px 16px;
+  gap: 16px 20px;
   margin-bottom: 40px;
+
+//   @include mobile {
+//     justify-content: center;
+//   }
 
   @include tablet {
     width: 100%;
@@ -30,7 +46,7 @@
   }
 
   @include desktop {
-	margin-bottom: 80px;
+    margin-bottom: 80px;
   }
 }
 
@@ -41,4 +57,9 @@
 .create-model__img--top-left-bottom-right-rad {
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+.link-wrap {
+  display: flex;
+  justify-content: center;
 }
