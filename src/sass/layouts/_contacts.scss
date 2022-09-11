@@ -5,14 +5,6 @@
 .contacts-hero__container {
     position: relative;
 
-    @include mobile {
-        text-align: center;
-    }
-
-    @include tablet {
-        text-align: left;
-    }
-
     @include desktop {
         padding-left: 149px;
         padding-right: 149px;
@@ -26,7 +18,6 @@
 
     @include tablet {
         @include fonts(700, 36, 45, null, uppercase);
-        text-align: start;
     }
 
     @include desktop {
@@ -116,16 +107,7 @@
 
     &:last-child {
         display: flex;
-        align-items: center;
         gap: 8px;
-
-        @include mobile {
-            justify-content: center;
-        }
-
-        @include tablet {
-            justify-content: start;
-        }
 
         @include desktop {
             flex-direction: column;
