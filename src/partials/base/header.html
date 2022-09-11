@@ -6,9 +6,14 @@
         </a>
 
         <nav class="page__nav" data-menu>
+            <button type="button" class="close-mobile-menu-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="24" height="24">
+                    <use href="./images/icons/sprite.svg#icon-burger-close"></use>
+                </svg>
+            </button>
             <ul class="page__list">
                 <li class="page__item">
-                    <a class="page__link" href="/src/index.html">Головна</a>
+                    <a class="page__link page__link--active " href="/src/index.html">Головна</a>
                 </li>
                 <li class="page__item">
                     <a class="page__link page__link--arrow" href="#">Послуги</a>
@@ -32,6 +37,8 @@
                     <a class="page__link" href="/src/contacts.html">Контакти</a>
                 </li>
             </ul>
+           
+            
         </nav>
         <button type="button" class="open-mobile-menu-btn" data-menu-open>
             <svg class="open-mobile-menu-btn__icon" width="32" height="32">
