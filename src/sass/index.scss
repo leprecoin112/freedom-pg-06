@@ -8,12 +8,12 @@
 // ----------- components ------------
 @import './components/container';
 @import './components/button';
+@import './components/section';
 
 // ------------ layouts --------------
-@import './layouts/section';
 @import './layouts/gallery';
 @import './layouts/take-order-hero';
 @import './layouts/model-examples';
 @import './layouts/footer';
-@import './components/create-model';
+@import './layouts/create-model';
 @import './layouts/scanning-hero';
