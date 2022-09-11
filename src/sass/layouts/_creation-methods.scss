@@ -1,16 +1,5 @@
 
-.modeling-creations>.container {
-  /*  margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;*/
 
-    @media screen and(min-width:768px) {
-        display: flex;
-
-        flex: 1 1;
-    }
-    
-}
 
 /*.modeling-creations__pre-title {
     
@@ -53,7 +42,12 @@ position: relative;
 }
 .modeling-creations__list{
     width: 100%;
+    @media screen and(min-width:768px) {
+            display: flex;
     
+            flex: 1 1;
+        }
+
     @media screen and(min-width:1440px) {
         width: 1376px;
       margin-right: 0;
@@ -77,7 +71,7 @@ position: relative;
     
     }
 }
-/*.modeling-creations__background{
+.modeling-creations__background{
    min-width: 280px;
     min-height: 164px;
     margin-top: 40px;
@@ -99,7 +93,7 @@ position: relative;
         }
     
         @media screen and(min-width:768px) {
-            /*margin-left: 34px;
+            margin-left: 34px;
             margin-right: 0;
         
            justify-content: space-between;
@@ -107,7 +101,7 @@ position: relative;
                 url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
     
             background-size: 246px 144px;
-            /*background-position: left 50vw;
+            /*background-position: left 50vw;*/
     
             @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
@@ -120,7 +114,7 @@ position: relative;
             }
         }
     
-      /*  @media screen and(min-width:1440px) {
+       @media screen and(min-width:1440px) {
             margin-right: 0;
             background-image:
                 url(/src/images/modeling-creation/bg-creations-desk-jpg.jpg);
@@ -141,7 +135,7 @@ position: relative;
     
     
         }
-}*/
+}
 
 .section__pre-title{
     font-family: 'Cera Pro';
@@ -204,5 +198,61 @@ h3 {
     
     
 }*/
+.modeling-creations>container{
+    position: relative;
+}
+.model-creat__dec63{
+    position: absolute;
+     top: 61;
+     right:-15;
+     width: 74px;
+     height: 74px;
+     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+     border-radius: 72px;
+     
+    @include tablet {
+            display: none;
+        }
 
+}
+.model-creat__dec19 {
+    position: absolute;
+    top: 129;
+    left:-17;
+    width: 74px;
+    height: 74px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+    
+    @include tablet {
+            display: none;
+        }
+
+}
+.model-hero__dec60 {
+    @include tablet {
+        position: absolute;
+        top: 84;
+        right: 32;
+        width: 71px;
+        height: 74px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 35px;
+        
+    }
+
+    
+        @include desktop{
+            position: absolute;
+                top: 153;
+                right: 31;
+                width: 137px;
+                height: 144px;
+                box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+                border-radius: 72px 0px;
+                
+
+        }
+
+}
 
