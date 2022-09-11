@@ -30,7 +30,6 @@
   }
 }
 
-
 // -------------FONTS MIXIN --------------
 @mixin fonts($fw, $fs, $lh, $ls: false, $tt: false) {
   font-weight: $fw;
@@ -44,55 +43,55 @@
   }
 }
 // Calculating line-height value to multiplier
-@function setLineHeight($lh, $fs) {
-  $lh-no-units: strip-unit($lh);
-  $fs-no-units: strip-unit($fs);
+// @function setLineHeight($lh, $fs) {
+//   $lh-no-units: strip-unit($lh);
+//   $fs-no-units: strip-unit($fs);
 
-  $lh-value: calc($lh-no-units / $fs-no-units);
+//   $lh-value: calc($lh-no-units / $fs-no-units);
 
-  $line-height: decimal-round($lh-value, 2);
+//   $line-height: decimal-round($lh-value, 2);
 
-  @return $line-height;
-}
+//   @return $line-height;
+// }
 
 // Delete unit from incoming value
-@function strip-unit($number) {
-  @if type-of($number) == "number" and not unitless($number) {
-    @return calc($number / ($number * 0 + 1));
-  }
+// @function strip-unit($number) {
+//   @if type-of($number) == 'number' and not unitless($number) {
+//     @return calc($number / ($number * 0 + 1));
+//   }
 
-  @return $number;
-}
+//   @return $number;
+// }
 
-@function decimal-round($number, $digits: 0, $mode: round) {
-  $n: 1;
-  // $number must be a number
-  @if type-of($number) != number {
-    @warn '#{ $number } is not a number.';
-    @return $number;
-  }
-  // $digits must be a unitless number
-  @if type-of($digits) != number {
-    @warn '#{ $digits } is not a number.';
-    @return $number;
-  } @else if not unitless($digits) {
-    @warn '#{ $digits } has a unit.';
-    @return $number;
-  }
-  @for $i from 1 through $digits {
-    $n: $n * 10;
-  }
-  @if $mode == round {
-    @return round($number * $n) / $n;
-  } @else if $mode == ceil {
-    @return ceil($number * $n) / $n;
-  } @else if $mode == floor {
-    @return floor($number * $n) / $n;
-  } @else {
-    @warn '#{ $mode } is undefined keyword.';
-    @return $number;
-  }
-}
+// @function decimal-round($number, $digits: 0, $mode: round) {
+//   $n: 1;
+//   // $number must be a number
+//   @if type-of($number) != number {
+//     @warn '#{ $number } is not a number.';
+//     @return $number;
+//   }
+//   // $digits must be a unitless number
+//   @if type-of($digits) != number {
+//     @warn '#{ $digits } is not a number.';
+//     @return $number;
+//   } @else if not unitless($digits) {
+//     @warn '#{ $digits } has a unit.';
+//     @return $number;
+//   }
+//   @for $i from 1 through $digits {
+//     $n: $n * 10;
+//   }
+//   @if $mode == round {
+//     @return round($number * $n) / $n;
+//   } @else if $mode == ceil {
+//     @return ceil($number * $n) / $n;
+//   } @else if $mode == floor {
+//     @return floor($number * $n) / $n;
+//   } @else {
+//     @warn '#{ $mode } is undefined keyword.';
+//     @return $number;
+//   }
+// }
 
 // -------------TRANSITION MIXIN --------------
 @mixin transition($property, $sproperty: false, $tproperty: false) {
@@ -101,10 +100,12 @@
 
   @if $sproperty {
     @if $tproperty {
-      transition: $property $duration $timing-function, $sproperty $duration $timing-function,
+      transition: $property $duration $timing-function,
+        $sproperty $duration $timing-function,
         $tproperty $duration $timing-function;
     } @else {
-      transition: $property $duration $timing-function, $sproperty $duration $timing-function;
+      transition: $property $duration $timing-function,
+        $sproperty $duration $timing-function;
     }
   } @else {
     transition: $property $duration $timing-function;

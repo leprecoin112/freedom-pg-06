@@ -1,0 +1,201 @@
+.wrap {
+  @media screen and (min-width: 321px) and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @include desktop {
+    padding-left: 149px;
+    padding-right: 149px;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+
+  @include tablet {
+    gap: 32px;
+  }
+}
+
+.gallery__item {
+  @include tablet {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+.gallery__title {
+  width: 220px;
+  margin-top: 8px;
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $secondaryTextColor;
+
+  @include tablet {
+    margin-top: 16px;
+    width: 280px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    width: 460px;
+  }
+}
+
+// .br {
+//   @include tablet {
+//     display: none;
+//   }
+// }
+
+// .br-special {
+//   @include desktop {
+//     display: none;
+//   }
+// }
+
+.container__decor {
+  position: relative;
+}
+
+.gallery__decortop {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  left: -29px;
+  top: -45px;
+  // background-color: black;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 35px 0px;
+  // transform: rotate(-180deg);
+
+  @include mobile {
+    width: 73.65px;
+    height: 74.05px;
+    left: 100px;
+    top: 110;
+    // background: black;
+    border-radius: 25px 0px;
+  }
+
+  @include tablet {
+    width: 73.65px;
+    height: 74.05px;
+    left: 32.1px;
+    top: 140;
+    // background: black;
+    border-radius: 25px 0px;
+  }
+
+  @include desktop {
+    width: 110.23px;
+    height: 144px;
+    left: 55px;
+    top: 0px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.gallery__decorright {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  left: 248px;
+  top: 244px;
+  // background-color: black;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
+
+  @include mobile {
+    left: 350px;
+    top: 220px;
+  }
+
+  @include tablet {
+    width: 73.65px;
+    height: 74.05px;
+    left: 711px;
+    top: 69px;
+  }
+
+  @include desktop {
+    width: 144.18px;
+    height: 144.29px;
+    left: 1350px;
+    top: 295px;
+  }
+}
+
+.gallery__decorleft {
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  left: -17px;
+  top: 308px;
+  // background-color: black;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  transform: rotate(180deg);
+
+  @include mobile {
+    width: 73.65px;
+    height: 74.05px;
+    left: 305px;
+    top: 175px;
+    // background-color: black;
+    border-radius: 0px 0px 35px 0px;
+    transform: rotate(-180deg);
+  }
+
+  @include tablet {
+    width: 73.65px;
+    height: 74.05px;
+    left: 662px;
+    top: 5px;
+
+    // background-color: black;
+    border-radius: 0px 0px 35px 0px;
+    transform: rotate(-180deg);
+  }
+
+  @include desktop {
+    width: 142.81px;
+    height: 144px;
+    left: 1240px;
+    top: 162px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(-180deg);
+  }
+}
+
+// .gallery__decorbottom {
+//   @include desktop {
+//     position: absolute;
+//     width: 194px;
+//     height: 144px;
+//     bottom: -100px;
+//     left: 1200px;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     border-radius: 50%;
+//     background-image: url(../images/tank-1x.jpg);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/tank-2x.jpg);
+//     }
+//   }
+// }
