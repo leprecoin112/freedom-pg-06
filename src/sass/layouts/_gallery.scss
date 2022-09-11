@@ -26,6 +26,8 @@
 }
 
 .gallery__item {
+  z-index: 1;
+
   @include tablet {
     width: calc((100% - 32px) / 2);
   }
@@ -34,7 +36,7 @@
 .gallery__title {
   width: 220px;
   margin-top: 8px;
-  font-family: 'Cera Pro';
+  font-family: 'CeraPro';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -131,8 +133,21 @@
   @include desktop {
     width: 144.18px;
     height: 144.29px;
-    left: 1350px;
+    left: 1360px;
     top: 295px;
+  }
+}
+
+.gallery__decorright-desktop {
+  @include desktop {
+    position: absolute;
+    width: 140.9px;
+    height: 161px;
+    left: 55px;
+    bottom: 89px;
+    // background: black;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0px;
   }
 }
 
