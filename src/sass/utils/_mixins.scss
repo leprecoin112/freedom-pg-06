@@ -12,6 +12,7 @@
   flex-wrap: $wrap;
 }
 
+// -------------MEDIA QUERY MIXIN --------------
 @mixin mobile {
   @media screen and (min-width: 480px) {
     @content;
@@ -26,6 +27,12 @@
 
 @mixin desktop {
   @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     @content;
   }
 }
