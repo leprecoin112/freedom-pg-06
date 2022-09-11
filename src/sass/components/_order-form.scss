@@ -1,0 +1,22 @@
+.order__wrap-form {
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.form__select {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #487996;
+    margin-bottom: 44px;
+    text-align: start;
+    @include fonts(400, 16, 20);
+
+    @include desktop {
+        @include fonts(400, 18, 20);
+    }
+}

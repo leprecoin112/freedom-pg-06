@@ -132,6 +132,7 @@ section {
     border: 1px solid #487996;
     padding: 22px 20px;
     resize: none;
+    margin-bottom: 4px;
     &:focus,
     &:hover {
         border-color: #2B2B2B;
@@ -200,6 +201,7 @@ section {
 }
 
 .form__button {
+    @include fonts(700, 16, 24, 0.01 , uppercase);
     width: 280px;
     height: 56px;
     border: none;
@@ -220,9 +222,14 @@ section {
     }
     @include tablet {
         margin-right: 0;
+        width: 175px;
+        height: 55px;
     }
     @include desktop {
+        @include fonts(700, 18, 24, 0.01, uppercase);
         margin-right: 0;
+        width: 175px;
+        height: 55px;
     }
 }
 
@@ -351,18 +358,4 @@ section {
         align-items: flex-start;
     }
 }
-
-.form__select {
-    width: 100%;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #487996;
-    margin-bottom: 44px;
-    text-align: start;
-    @include fonts(400, 16, 20);
-    @include desktop {
-        @include fonts(400, 18, 20);
-    }
-}
-
 
