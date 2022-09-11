@@ -1,5 +1,8 @@
 .section__title {
-  font-family: 'Cera Pro';
+  margin-bottom: 16px;
+  // margin-bottom: 62px;
+
+  font-family: 'CeraPro';
   @include fonts(null, 24, 60, null, uppercase);
   color: $secondaryTextColor;
 }
