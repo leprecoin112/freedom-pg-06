@@ -1,0 +1,192 @@
+.container{
+    position: relative;
+    @media  screen and(min-width:1440px) {
+        .section__title{
+            margin-left: 149px;
+        }
+    }
+}
+.section__list{
+    
+    
+    @media  screen and(min-width:768px){
+        max-width: 515px;
+    }
+    @media  screen and(min-width:1440px){
+        display: flex;
+        flex-wrap: wrap;
+       
+        width: 100%;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.section__wrap{
+    @media  screen and(min-width:768px){
+        display: flex;
+    }
+    @media  screen and(min-width:1440px){
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 189px;
+        margin-left: 149px;
+        
+    }
+}
+.section__link{
+    margin-bottom: 16px;
+    &:last-child{
+        margin-bottom: 20px;
+        @media  screen and(min-width:768px){
+            margin-bottom: 40px;;
+        }
+    }
+    @media  screen and(min-width:1440px){
+        margin-bottom: 24px;
+        margin-right: 74px;
+        // width: calc(( 100% - 72px ) / 2 );
+        &:last-child{
+            margin-bottom: 0;
+            margin-right: 0;
+        }
+    }
+}
+.section__text{
+font-family: 'Cera Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 1.25;
+color: #2B2B2B;
+
+@media  screen and(min-width:1440px){
+    
+}
+}
+.bg-img{
+    width: 100%;
+    height: 200px;
+    background-image: url('../images/scanning-hero-img/scanning-hero-mob.jpg');
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+.bg-img{
+    background-image: url('../images/scanning-hero-img/scanning-hero-mob-2x.jpg');
+}
+    }
+    @media  screen and(min-width:768px) {
+        min-width: 240px;
+        height: 170px;
+        margin-top: 116px;
+        background-image:  url('../images/scanning-hero-img/scanning-hero-tab.jpg');
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    .bg-img{
+        background-image: url('../images/scanning-hero-img/scanning-hero-tab-2x.jpg');
+    
+    }
+}
+    }
+    @media  screen and(min-width:1440px) {
+        min-width: 435px;
+        height: 286px;
+        width: 435px;
+        margin-top: 0;
+        background-image:  url('../images/scanning-hero-img/scanning-hero-dec.jpg');
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    .bg-img{
+        background-image: url('../images/scanning-hero-img/scanning-hero-dec-2x.jpg');
+
+}  
+}}}
+
+.scanning-hero-decor-1{
+position: absolute;
+width: 74px;
+height: 74px;
+left: -37px;
+top: 242px;
+background: rgba(255, 255, 255, 0);
+box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+border-radius: 0px 0px 35px 0px;
+@media  screen and(min-width:768px){
+height: 71px;
+left: 32px;
+top: 222px;
+background: rgba(255, 255, 255, 0);
+border-radius: 0px 0px 0px 35px;
+transform: rotate(-90deg);  
+}
+@media  screen and(min-width:1440px){
+width: 82px;
+height: 78px;
+left: 35px;
+top: 190px;
+background: rgba(255, 255, 255, 0);
+border-radius: 0px 0px 72px 0px;
+transform: none;
+}
+}
+.scanning-hero-decor-2{
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 261px;
+    top: 580px;
+    background:rgba(255, 255, 255, 0);
+    border-radius: 72px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    @media  screen and(min-width:768px){
+    width: 71px; 
+    left: 664px;
+    top: 465px;
+    background:rgba(255, 255, 255, 0);
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+    }
+    @media  screen and(min-width:1440px){
+    width: 144px;
+    height: 137px;
+    left: 1271px;
+    top: 152px;
+    background:rgba(255, 255, 255, 0);
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(90deg);
+    }
+}
+.scanning-hero-decor-3{
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: -17px;
+    top: 622px;
+    background:rgba(255, 255, 255, 0);
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+    @media  screen and(min-width:768px){
+    width: 71px;
+    height: 64px;
+    left: 664px;
+    top: 82px;
+    background:rgba(255, 255, 255, 0);
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 35px 0px 0px;
+    transform: rotate(180deg);
+    }
+    @media  screen and(min-width:1440px){
+    width: 137px;
+    height: 144px; 
+    left: 1272px;
+    top: 552px;
+    background:rgba(255, 255, 255, 0);
+    border-radius: 72px 0px;
+    }
+}
