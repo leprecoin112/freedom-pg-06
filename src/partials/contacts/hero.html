@@ -1,0 +1,31 @@
+<section class="section contacts-hero">
+    <div class="container contacts-hero__container">
+        <h1 class="contacts-hero__title">КОНТАКТИ</h1>
+        <div class="contacts-hero__content">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/aubLuCFIejc" title="YouTube video player" class="video__content" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video__overlay"></div>
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 73" class="video__button"><g filter="url(#a)"><circle cx="36.5" cy="36.5" r="33.5" fill="#fff"/></g><path d="M49.357 35.634a1 1 0 0 1 0 1.732L30.822 48.068a1 1 0 0 1-1.5-.866V25.799a1 1 0 0 1 1.5-.866l18.535 10.701Z" fill="#487996"/><defs><filter id="a" x="0" y="0" width="73" height="73" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur_249_445"/></filter></defs></svg>
+            </div>
+            <div class="contacts-hero__descr">
+                <p class="contacts-hero__text">
+                    Людина уперше побачивши процес <span lang="en">3D</span> друку може легко захопитися спостереженням за цим процесом не на десяток хвилин.
+                </p>
+                <p class="contacts-hero__text">
+                    Наша команда створює <span lang="en">timelapse</span> відео що б ви могли краще ознайомитися з технологією <span lang="en">3D</span> друку і просто помилуватися красою цього процесу. 
+                </p>
+                <p class="contacts-hero__text">
+                    Приємного перегляду!<span><img src="./images/contacts/emoji.png" alt="Смайл" class="contacts-hero__emoji"></span>
+                </p>
+            </div>
+        </div>
+        <div class="contacts-hero__decor contacts-hero__decor--left"></div>
+        <div class="contacts-hero__decor contacts-hero__decor--right"></div>
+    </div>
+</section>
+<script type="text/javascript">
+    document.querySelector(".video__button").onclick = function(){
+        this.style.display = "none";
+        document.querySelector(".video__overlay").style.display = "none";
+    }
+</script>
