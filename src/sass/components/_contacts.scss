@@ -7,19 +7,14 @@ body {
     font-style: normal
 }
 
-section {
-    @include desktop {
-        padding-left: 149px;
-        padding-right: 149px;
-    }
-}
-
 .order__wrap {
     @include desktop {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: baseline;
+        padding-left: 149px;
+        padding-right: 149px;
     }
 }
 
