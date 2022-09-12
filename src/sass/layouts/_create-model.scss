@@ -4,9 +4,8 @@
   justify-content: center;
 
   @include tablet {
-	justify-content: left;
+    justify-content: left;
   }
-
 }
 
 .section__title-xs-font {
@@ -34,10 +33,6 @@
   gap: 16px 20px;
   margin-bottom: 40px;
 
-//   @include mobile {
-//     justify-content: center;
-//   }
-
   @include tablet {
     width: 100%;
     flex-wrap: nowrap;
@@ -62,4 +57,64 @@
 .link-wrap {
   display: flex;
   justify-content: center;
+}
+
+.create-model__dekor-top_left {
+  position: absolute;
+  top: 40px;
+  left: -18px;
+
+  width: 74px;
+  height: 74px;
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 35px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    top: -42px;
+    left: -22px;
+
+    display: block;
+    width: 137px;
+    height: 144px;
+
+    border-radius: 72px;
+  }
+}
+
+.create-model__dekor-top_right {
+  position: absolute;
+  top: 0;
+  right: -18px;
+
+  width: 74px;
+  height: 74px;
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  transform: rotate(90deg);
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.create-model__dekor-bottom_right {
+  position: absolute;
+  bottom: 22px;
+  right: -15px;
+
+  width: 74px;
+  height: 74px;
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+
+  @include tablet {
+    display: none;
+  }
 }
