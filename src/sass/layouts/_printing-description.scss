@@ -1,12 +1,3 @@
-// .description {
-//     // background-color: #E5E5E5;
-//     // position : relative;
-//     padding-bottom: 60px;
-
-//     @include desktop {
-//         padding-bottom: 80px;
-//     }
-// }
 
 .process-description__text {
     // font-family: 'Cera Pro';
@@ -157,6 +148,9 @@
     left: 261px;
     top: 72.71px;
     // z-index: -1;
+    @include mobile {
+            left: 341px;
+        }
 
 
     @include tablet {
@@ -166,7 +160,7 @@
         left: -17px;
         top: 942.75px;
 
-        @include desktop {
+    @include desktop {
             width: 136.83px;
             height: 144px;
             background: $primaryBgColor;
@@ -188,6 +182,9 @@
     left: -17px;
     top: 135.11px;
     // z-index: -1;
+    @include mobile{
+    left: 63px;
+    }
 
 
     @include tablet {
@@ -198,13 +195,13 @@
         top: 78.65px;
         z-index: -1;
 
-        @include desktop {
-            width: 136.83px;
-            height: 144px;
-            background: $primaryBgColor;
-            left: 1272px;
-            top: -51px;
-            border-radius: 72px 0px;
+    @include desktop {
+        width: 136.83px;
+        height: 144px;
+        background: $primaryBgColor;
+        left: 1272px;
+        top: -51px;
+        border-radius: 72px 0px;
 
         }
 
@@ -223,6 +220,10 @@
     right: -40.65px;
     top: 502.83px;
     // z-index: -1;
+    @include mobile {
+            left: 341px;
+        }
+    
 
 
     @include tablet {
@@ -233,7 +234,7 @@
         top: 643.88px;
         z-index: -1;
 
-        @include desktop {
+    @include desktop {
             display: none;
         }
 
@@ -251,6 +252,10 @@
     left: -18px;
     top: 545.83px;
     z-index: -1;
+    @include mobile {
+            left: 63px;
+            
+        }
     @include tablet {
             visibility: hidden;
         }
@@ -264,7 +269,7 @@
     position: absolute;
     background: $primaryBgColor;
     left: 1127px;
-    top: 1097px;
+    top: 1047px;
     visibility: visible;
 
     }
@@ -277,10 +282,13 @@
     height: 73.65px;
     background: $primaryBgColor;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px 0px;
+    border-radius: 25px 0px;
     position: absolute;
     left: 261px;
     top: 844.57px;
+    @include mobile {
+            left: 341px;
+        }
 
 
     @include tablet {
@@ -292,13 +300,16 @@
         height: 145px;
         background: $primaryBgColor;
         left: 1272px;
-        top: 952px;
+        top: 902px;
         visibility: visible;
+        border-radius: 72px 0px;
 
     }
 
 }
 
-body {
-    font-family: CeraPro;
+
+
+.container--overflow{
+    overflow: hidden;
 }
