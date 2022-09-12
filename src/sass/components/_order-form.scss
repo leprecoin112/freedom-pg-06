@@ -1,0 +1,159 @@
+
+.order__wrap-form {
+    position: relative;
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-left: 149px;
+        padding-right: 149px;
+    }
+}
+
+.order__form-form {
+    margin-bottom: 60px;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+
+.form__button-form {
+    @include fonts(700, 16, 24, 0.01, uppercase);
+    width: 280px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    background-color: $secondaryBgColor;
+    color: $secondaryTextColor;
+    border-radius: 30.5px;
+    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: black;
+    }
+
+    @include mobile {
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+    @include tablet {
+        width: 175px;
+        height: 55px;
+        margin-right: 0;
+    }
+    @include desktop {
+        @include fonts(700, 18, 24, 0.01, uppercase);
+        width: 175px;
+        height: 55px;
+        margin-right: 0;
+    }
+}
+
+.form__select {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #487996;
+    text-align: start;
+    appearance: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    @include fonts(400, 16, 20);
+    @include desktop {
+        @include fonts(400, 18, 20);
+    }
+}
+
+.form__select-wrap {
+    position: relative;
+    width: 280px;
+    height: 24px;
+    margin-bottom: 44px;
+    @include mobile {
+            width: 400px;
+        }
+    
+        @include tablet {
+            width: 400px;
+        }
+    
+        @include desktop {
+            width: 555px;
+        }
+}
+
+.form__select-wrap::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 20px;
+    height: 13px;
+    pointer-events: none;
+    background-image: url(/src/images/down.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+.contacts__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include mobile {
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include tablet {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    @include desktop {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+.contacts__wrap-con {
+    display: block;
+
+    @include mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @include tablet {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: start;
+        flex-direction: row;
+    }
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+}
