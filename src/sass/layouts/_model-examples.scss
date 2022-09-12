@@ -1,11 +1,8 @@
-//--імітація хедера--//
 .take-printing__container {
-  // padding-bottom: 70px;//tablet
-  // padding-bottom: 140px;//desk
   position: relative;
 }
 
-.figure-priting__left {
+.figure-printing__left {
   @include desktop {
     position: absolute;
     width: 82px;
@@ -18,7 +15,7 @@
     border-radius: 0 0 72px 0;
   }
 }
-.figure-priting__right {
+.figure-printing__right {
   @include tablet {
     position: absolute;
     top: -18px;
@@ -39,8 +36,6 @@
     right: 32px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 0 72px;
-
-    // border-radius: 0 72px 0 0
   }
 }
 
@@ -54,7 +49,9 @@
     margin-bottom: 16px;
     margin-left: 0;
     font-size: 36px;
-    line-height: calc(45 / 36);
+    @include fonts(null, 36, 45, null, null);
+
+    // line-height: calc(45 / 36);
   }
 
   @include desktop {
@@ -122,23 +119,16 @@
 
   font-family: 'CeraPro';
   @include fonts(null, 14, 18, null, null);
-  // font-size: 14px;
-  // line-height: calc(18 / 14);
   height: 45px;
 
   @include tablet {
     display: block;
     margin-top: 20px;
-    // @include fonts(null, 14, 18, null, null);
-    // font-size: 14px;
-    // line-height: calc(18 / 14);
     height: 45px;
   }
 
   @include desktop {
     @include fonts(null, 18, 23, null, null);
 
-    // font-size: 18px;
-    // line-height: calc(23 / 18);
   }
 }
