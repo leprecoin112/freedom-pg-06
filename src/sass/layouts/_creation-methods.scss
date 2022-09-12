@@ -1,20 +1,10 @@
-
-.modeling-creations {
-    margin-top: 60px;
-}
-    
-    
-
-
 .modeling-creations__content {
     font-family: 'Cera Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.25em;
-
     color: #2B2B2B;
-
     margin-top: 16px;
    
 }
@@ -22,18 +12,20 @@
 
 .list {
     list-style: none;
+}.modeling-creations__item{
+    @include desktop{
+        padding-top: 24px;
+    }
 }
-
-
-   
 
 .modeling-creations__list{
     width: 100%;
-    background-size: 280px 164px;
+    min-height: 470px;
     background: no-repeat;
     background-image:
      url(/src/images/modeling-creation/bg-creations-jpg.jpg);
-    
+     background-size: 280px 164px;
+     background-position:bottom;
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -43,178 +35,100 @@
             }
         }
     
-        @include tablet {
+    
+     @include tablet {
+           min-height: 0;
+          flex: 1 1;
+          justify-content: space-between;
+          background-size: 246px 144px;
+          background-position: right;
+          background-image:
+              url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
+              @media (min-device-pixel-ratio: 2),
+              (-webkit-min-device-pixel-ratio: 2),
+              (min-resolution: 192dpi),
+              (min-resolution: 2dppx) {
+                 .modeling-creations {
+                     background-image:
+                          url(/src/images/modeling-creation/bg-creations-tab-2x.jpg);
+                        }
+                    }
+     
+            }
+        
+        
+    
+    
+     @include desktop {    
            
-            flex: 1 1;
-            justify-content: space-between;
-            background-image:
-                url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
-    
-            background-size: 246px 144px;
-            background-position:right ;
-        
-                @media (min-device-pixel-ratio: 2),
-                (-webkit-min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    .modeling-creations {
-                        background-image:
-                            url(/src/images/modeling-creation/bg-creations-tab-2x.jpg);
+         margin-right: 0;
+         
+          background-image:
+              url(/src/images/modeling-creation/bg-creations-desk-jpg.jpg);
+             background-size: 555px 301px;
+             background-position:bottom 0 right 0;
+             @media (min-device-pixel-ratio: 2),
+             (-webkit-min-device-pixel-ratio: 2),
+             (min-resolution: 192dpi),
+              (min-resolution: 2dppx) {
+                 .modeling-creations {
+                      background-image:
+                          url(/src/images/modeling-creation/bg-creations-desk-2x.jpg);
+                        }
                     }
-                }
-            }
-        
-          @include desktop {
-            
-            padding-left: 149px;
-            padding-right: 149px;
-            margin-right: 0;
-            background-size: 555px 301px;
-            background-position: right 149px top -60px;
-            background-image:
-             url(/src/images/modeling-creation/bg-creations-desk-jpg.jpg);
-                @media (min-device-pixel-ratio: 2),
-                (-webkit-min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    .modeling-creations {
-                        background-image:
-                            url(/src/images/modeling-creation/bg-creations-desk-2x.jpg);
-                    }
-                }
-        
-        
-        
+                
         
             }
+           
     
-
-   /* @media screen and(min-width:1440px) {
-        width: 1376px;
-      margin-right: 0;
-      background-size: 555px 301px;
-      background-repeat: no-repeat;
-      background-position: right 50vw;
-      background-image:
-         url(/src/images/modeling-creation/bg-creations-desk-jpg.jpg);
-    
-        
-    
-            @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                .modeling-creations {
-                    background-image:
-                        url(/src/images/modeling-creation/bg-creations-desk-2x.jpg);
-                }
-            }
-    
-    }*/
 }
-/*.modeling-creations__background{
-   min-width: 280px;
-    min-height: 164px;
-    margin-top: 40px;
-    flex: 1 1;
     
-    background-size: 280px 164px;
-    
-        background: no-repeat;
-        background-image:
-            url(/src/images/modeling-creation/bg-creations-jpg.jpg);
-    
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .modeling-creations {
-                background-image: url(/src/images/modeling-creation/bg-creations-2x.jpg);
-            }
-        }
-    
-        @media screen and(min-width:768px) {
-            margin-left: 34px;
-            margin-right: 0;
-        
-           justify-content: space-between;
-            background-image:
-                url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
-    
-            background-size: 246px 144px;
-            /*background-position: left 50vw;
-    
-            @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                .modeling-creations {
-                    background-image:
-                        url(/src/images/modeling-creation/bg-creations-tab-2x.jpg);
-                }
-            }
-        }
-    
-       @media screen and(min-width:1440px) {
-            margin-right: 0;
-            background-image:
-                url(/src/images/modeling-creation/bg-creations-desk-jpg.jpg);
-    
-            background-size: 555px 301px;
-    
-            @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                .modeling-creations {
-                    background-image:
-                        url(/src/images/modeling-creation/bg-creations-desk-2x.jpg);
-                }
-            }
-    
-    
-    
-    
-        }
-}*/
 
-.section__pre-title{
-    font-family: 'Cera Pro';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.277em;
-        text-transform: uppercase;
+        
     
-        color: #487996;
- @media screen and(min-width:768px) {
-        width: 648px;
-        height: 30px;
-        font-size: 24px;
-        line-height: 1.25em;
+.modeling-creations__list{
+    @include desktop{
+        padding-top: 60px;
     }
+}
+.modal-crea__bg{
+    @include desktop{
+        padding-left: 149px;
+        padding-right: 149px;
+    }
+}
+    
+
+   
+
+
+.modeling-creations__pre-title{
+ font-family: 'Cera Pro';
+ font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+ line-height: 1.277em;
+  text-transform: uppercase;
+    
+ color: #487996;
+ @include tablet {
+     width: 648px;
+     height: 30px;
+     font-size: 24px;
+     line-height: 1.25em;
+    }
+
  @media screen and(min-width:1440px) {
-       font-size: 36px;
-       line-height: 1.62em;
-       margin-top: 100px;
-    }    
+     font-size: 36px;
+      line-height: 1.62em;
+      height: 45px;
+    }
+       
+       
 }
-h3 {
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.277em;
-    text-transform: uppercase;
-
-    color: #487996;
-}
 .block{
-   /* display: block;
-    width: 7px;
-    height: 7px;
-    background: #487996;
-    border-radius: 3px 0px;
-    justify-content: center;*/
+  
    justify-content: flex-start;
     
 
@@ -226,19 +140,7 @@ h3 {
   /*padding-right: 8px;*/
   justify-content: center;
 }
-/*.block::after{
-    
-    display: block;
-    width: 7px;
-    height: 7px;
-    
-    position: absolute;
-    
-   
-    
-    
-    
-}*/
+
 .modeling-creations>container{
     position: relative;
 }
@@ -283,17 +185,17 @@ h3 {
     }
 
     
-        @include desktop{
-            position: absolute;
-                top: 153;
-                right: 31;
-                width: 137px;
-                height: 144px;
-                box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-                border-radius: 72px 0px;
+  @include desktop{
+    position: absolute;
+     top: 153;
+     right: 31;
+     width: 137px;
+     height: 144px;
+     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+     border-radius: 72px 0px;
                 
 
-        }
+    }
 
 }
 
