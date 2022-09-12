@@ -74,7 +74,7 @@
 }
 
 .section__title-primary {
-  font-family: 'Cera Pro';
+  font-family: 'CeraPro';
   @include fonts(700, 24, 30, null, uppercase);
   color: $secondaryTextColor;
 
@@ -88,7 +88,7 @@
 }
 
 .section__title-secondary {
-  font-family: 'Cera Pro';
+  font-family: 'CeraPro';
   @include fonts(700, 18, 23, null, uppercase);
   color: $secondaryTextColor;
 
@@ -102,7 +102,7 @@
 }
 
 .section__title-xs-font {
-  font-family: 'Cera Pro';
+  font-family: 'CeraPro';
   @include fonts(700, 16, 20, null, uppercase);
   color: $secondaryTextColor;
 
@@ -121,10 +121,19 @@
   color: $primaryTextColor;
 
   @include tablet {
-	@include fonts(400, 24, 28, null, uppercase);
+    @include fonts(400, 24, 28, null, uppercase);
   }
 
   @include desktop {
-	@include fonts(400, 48, 56, null, uppercase);
+    @include fonts(400, 48, 56, null, uppercase);
+  }
+}
+
+.section-text {
+  font-family: 'CeraPro';
+  @include fonts(300, 16, 20);
+
+  @include desktop {
+    @include fonts(300, 18, 23);
   }
 }

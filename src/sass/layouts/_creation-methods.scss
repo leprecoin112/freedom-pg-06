@@ -1,201 +1,137 @@
 .modeling-creations__content {
-    font-family: 'Cera Pro';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.25em;
-    color: #2B2B2B;
-    margin-top: 16px;
-   
-}
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25em;
+  color: #2b2b2b;
+  margin-top: 16px;
+  display: flex;
 
+  &::before {
+    content: url(/src/images/modeling-creation/Rectangle\ 1.jpg);
+    color: #487996;
+    border-radius: 3px 0px;
+    margin-right: 9px;
+    justify-content: center;
+  }
+}
 
 .list {
-    list-style: none;
-}.modeling-creations__item{
-    @include desktop{
-        padding-top: 24px;
+  list-style: none;
+}
+.modeling-creations__item {
+  @include desktop {
+    padding-top: 24px;
+  }
+}
+
+.modeling-creations__list {
+  width: 100%;
+  min-height: 470px;
+  background: no-repeat;
+  background-image: url(/src/images/modeling-creation/bg-creations-jpg.jpg);
+  background-size: 280px 164px;
+  background-position: bottom;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modeling-creations {
+      background-image: url(/src/images/modeling-creation/bg-creations-2x.jpg);
     }
-}
+  }
 
-.modeling-creations__list{
-    width: 100%;
-    min-height: 470px;
-    background: no-repeat;
-    background-image:
-     url(/src/images/modeling-creation/bg-creations-jpg.jpg);
-     background-size: 280px 164px;
-     background-position:bottom;
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .modeling-creations {
-                background-image: url(/src/images/modeling-creation/bg-creations-2x.jpg);
-            }
-        }
-    
-    
-     @include tablet {
-           min-height: 0;
-          flex: 1 1;
-          justify-content: space-between;
-          background-size: 246px 144px;
-          background-position: right;
-          background-image:
-              url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
-              @media (min-device-pixel-ratio: 2),
-              (-webkit-min-device-pixel-ratio: 2),
-              (min-resolution: 192dpi),
-              (min-resolution: 2dppx) {
-                 .modeling-creations {
-                     background-image:
-                          url(/src/images/modeling-creation/bg-creations-tab-2x.jpg);
-                        }
-                    }
-     
-            }
-        
-        
-    
-    
-     @include desktop {    
-           
-         margin-right: 0;
-         
-          background-image:
-              url(/src/images/modeling-creation/bg-creations-desk-jpg.jpg);
-             background-size: 555px 301px;
-             background-position:bottom 0 right 0;
-             @media (min-device-pixel-ratio: 2),
-             (-webkit-min-device-pixel-ratio: 2),
-             (min-resolution: 192dpi),
-              (min-resolution: 2dppx) {
-                 .modeling-creations {
-                      background-image:
-                          url(/src/images/modeling-creation/bg-creations-desk-2x.jpg);
-                        }
-                    }
-                
-        
-            }
-           
-    
-}
-    
-
-        
-    
-.modeling-creations__list{
-    @include desktop{
-        padding-top: 60px;
+  @include tablet {
+    min-height: 0;
+    flex: 1 1;
+    justify-content: space-between;
+    background-size: 246px 144px;
+    background-position: right;
+    background-image: url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .modeling-creations {
+        background-image: url(/src/images/modeling-creation/bg-creations-tab-2x.jpg);
+      }
     }
-}
-.modal-crea__bg{
-    @include desktop{
-        padding-left: 149px;
-        padding-right: 149px;
+  }
+
+  @include desktop {
+    margin-right: 0;
+
+    background-image: url(/src/images/modeling-creation/bg-creations-desk-jpg.jpg);
+    background-size: 555px 301px;
+    background-position: bottom 0 right 0;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .modeling-creations {
+        background-image: url(/src/images/modeling-creation/bg-creations-desk-2x.jpg);
+      }
     }
-}
-    
-
-   
-
-
-.modeling-creations__pre-title{
- font-family: 'Cera Pro';
- font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
- line-height: 1.277em;
-  text-transform: uppercase;
-    
- color: #487996;
- @include tablet {
-     width: 648px;
-     height: 30px;
-     font-size: 24px;
-     line-height: 1.25em;
-    }
-
- @media screen and(min-width:1440px) {
-     font-size: 36px;
-      line-height: 1.62em;
-      height: 45px;
-    }
-       
-       
+  }
 }
 
-.block{
-  
-   justify-content: flex-start;
-    
-
+.modeling-creations__list {
+  @include desktop {
+    padding-top: 60px;
+  }
 }
-.block::before{
-  content: url(/src/images/modeling-creation/Rectangle\ 1.jpg);
-  color: #487996;
-  border-radius: 3px 0px;
-  /*padding-right: 8px;*/
-  justify-content: center;
+.modal-crea__bg {
+  @include desktop {
+    padding-left: 149px;
+    padding-right: 149px;
+  }
 }
 
-.modeling-creations>container{
-    position: relative;
-}
-.model-creat__dec63{
-    position: absolute;
-     top: 61;
-     right:-15;
-     width: 74px;
-     height: 74px;
-     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-     border-radius: 72px;
-     
-    @include tablet {
-            display: none;
-        }
+.model-creat__dec63 {
+  position: absolute;
+  top: 61;
+  right: -15;
+  width: 74px;
+  height: 74px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
 
+  @include tablet {
+    display: none;
+  }
 }
 .model-creat__dec19 {
-    position: absolute;
-    top: 129;
-    left:-17;
-    width: 74px;
-    height: 74px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 25px 0px;
-    
-    @include tablet {
-            display: none;
-        }
+  position: absolute;
+  top: 129;
+  left: -17;
+  width: 74px;
+  height: 74px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
 
+  @include tablet {
+    display: none;
+  }
 }
 .model-hero__dec60 {
-    @include tablet {
-        position: absolute;
-        top: 84;
-        right: 32;
-        width: 71px;
-        height: 74px;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-        border-radius: 0px 0px 0px 35px;
-        
-    }
-
-    
-  @include desktop{
+  @include tablet {
     position: absolute;
-     top: 153;
-     right: 31;
-     width: 137px;
-     height: 144px;
-     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-     border-radius: 72px 0px;
-                
+    top: 84;
+    right: 32;
+    width: 71px;
+    height: 74px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+  }
 
-    }
-
+  @include desktop {
+    position: absolute;
+    top: 70%;
+    right: 32;
+    width: 144px;
+    height: 144px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0px;
+  }
 }
-
