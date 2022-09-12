@@ -88,6 +88,7 @@
     position: relative;
     padding: 20px 0px;
     align-items: center;
+   
   }
 
   .header__logo {
@@ -132,10 +133,11 @@
   .contacts__icon {
     display: none;
   }
+  
   .decor1,
   .decor2,
   .decor3 {
-    position: absolute;
+   position: absolute;
     width: 74px;
     height: 74px;
 
@@ -143,26 +145,26 @@
 
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   }
-
-  .decor1 {
-    left: -20px;
-    top: 0;
-    border-radius: 0px 50px 50px 0px;
-  }
-
-  .decor2 {
-    right: -20px;
-    top: 0;
-    border-radius: 50px 0px 0px 50px;
-  }
-
-  .decor3 {
-    left: -50px;
-    top: 295px;
-    border-radius: 0px 0px 30px 0px;
-  }
+.decor1 {
+  left: 0px;
+  top: 0;
+  border-radius: 0px 50px 50px 0px;
 }
-@media screen and (max-width: 1439.98px) {
+
+.decor2 {
+  right: 0px;
+  top: 0;
+  border-radius: 50px 0px 0px 50px;
+}
+
+.decor3 {
+  left: -25px;
+  top: 295px;
+  border-radius: 0px 0px 30px 0px;
+}
+  
+}
+ @media screen and (max-width: 1439.98px){
   .page__nav {
     position: fixed;
     top: 0;
@@ -179,7 +181,7 @@
     pointer-events: none;
     
   }
-
+  
   .page__nav.is-open {
     opacity: 1;
     visibility: visible;
@@ -226,7 +228,7 @@
     margin-right: 9px;
     margin-bottom: 4px;
   }
-
+    
   .page__item:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -275,6 +277,210 @@
   .contacts__icon {
     margin-right: 4px;
   }
+    @media screen and (max-width:1439.98px) {
+      .decor1,
+        .decor2,
+        .decor3,
+        .decor4,
+        .decor5,
+        .decor6,
+        .decor7,
+        .decor8,
+        .decor9,
+        .decor10,
+        .decor11,
+        .decor12,
+        .decor13,
+        .decor14,
+        .decor15,
+        .decor16,
+        .decor17,
+        .decor18,
+        .decor19,
+        .decor20,
+        .decor21,
+        .decor22 {
+          position: absolute;
+          width: 74px;
+          height: 74px;
+      
+          z-index: 2;
+      
+          box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        }
+      
+        .decor1 {
+          left: 235px;
+          top: 0;
+          border-radius: 0px 50px 50px 0px;
+        }
+      
+        .decor2 {
+          right: 235px;
+          top: 0;
+          border-radius: 50px 0px 0px 50px;
+        }
+      
+        .decor3 {
+          left: 35px;
+          top: 444px;
+          border-radius: 0px 0px 35px 0px;
+        }
+      
+        .decor4 {
+          left: 35px;
+          top: 0px;
+          border-radius: 35px 0px 0px 0px;
+        }
+      
+        .decor5 {
+          left: 35px;
+          top: 74px;
+          border-radius: 0px 0px 35px 0px;
+        }
+      
+        .decor6 {
+          right: 117px;
+          top: 74px;
+          border-radius: 0px 0px 0px 0px;
+        }
+      
+        .decor7 {
+          right: 117px;
+          top: 148px;
+          border-radius: 50%;
+        }
+      
+        .decor8 {
+          right: 43px;
+          top: 222px;
+          border-radius: 25px 0px 25px 0px;
+        }
+      
+        .decor9 {
+          right: 117px;
+          top: 296px;
+          border-radius: 0px 0px 0px 25px;
+        }
+      
+        .decor10 {
+          right: 43px;
+          top: 370px;
+          border-radius: 0px 0px 0px 25px;
+        }
+      
+        .decor11 {
+          right: 43px;
+          top: 518px;
+          border-radius: 25px 0px 0px 0px;
+        }
+      
+        .decor12 {
+          right: -2px;
+          top: 592px;
+          border-radius: 50%;
+        }
+      
+        .decor13 {
+          right: 43px;
+          top: 74px;
+          border-radius: 0px 0px 70px 0px;
+        }
+      
+        .decor13::after {
+          content: '';
+          width: 74px;
+          height: 74px;
+          border-radius: 0px 0px 70px 0px;
+      
+          display: block;
+          background-image: url(/src/images/main-menu-tablet/Main_page3.png);
+          background-size: 74px 74px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      
+        .decor14 {
+          right: 43px;
+          top: 296px;
+          border-radius: 45px 45px 0px 0px;
+        }
+      
+        .decor14::after {
+          content: '';
+          width: 74px;
+          height: 74px;
+          border-radius: 45px 45px 0px 0px;
+      
+          display: block;
+          background-image: url(/src/images/main-menu-tablet/galery-image4.png);
+          background-size: 74px 74px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      
+        .decor15 {
+          left: 109px;
+          top: 74px;
+          border-radius: 50%;
+        }
+      
+        .decor15::after {
+          content: '';
+          width: 74px;
+          height: 74px;
+          border-radius: 50%;
+      
+          display: block;
+          background-image: url(/src/images/main-menu-tablet/galery-image1.png);
+          background-size: 74px 74px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      
+        .decor16 {
+          left: 109px;
+          top: 148px;
+          border-radius: 0px 35px 0px 0px;
+        }
+      
+        .decor17 {
+          left: 35px;
+          top: 222px;
+          border-radius: 0px 0px 0px 35px;
+        }
+      
+        .decor18 {
+          left: 109px;
+          top: 296px;
+          border-radius: 0px 0px 35px 0px;
+        }
+      
+        .decor19 {
+          left: 35px;
+          top: 370px;
+          border-radius: 50%;
+        }
+      
+        .decor19::after {
+          content: '';
+          width: 74px;
+          height: 74px;
+          border-radius: 50%;
+      
+          display: block;
+          background-image: url(/src/images/main-menu-tablet/3d-skanirovanye2.png);
+          background-size: 74px 74px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      
+        .decor20 {
+          left: 35px;
+          top: 666px;
+          border-radius: 25px 0px 25px 0px;
+        }
+    }
 }
 
 @include desktop {
