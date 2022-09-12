@@ -6,8 +6,13 @@
 
 }
 .modeling-hero__item{
+    margin-left: 0;
+    @include tablet{
+        /*padding-left: 32px;
+        padding-right: 32px;*/
+    }
     @media screen and(min-width: 1140px){
-        padding-left: 149px;
+       /* padding-left: 149px;*/
     }
    
     
@@ -45,8 +50,10 @@
         display: flex;
         font-size: 18px;
         line-height: 1.277px;
+        gap: 72px;
     }
 }
+
 .modeling-hero-list__text{
     font-family: 'Cera Pro';
     font-style: normal;
@@ -57,15 +64,16 @@
    color: #2B2B2B;
 
   margin-top: 16px;
-  @media screen and(min-width:1440px){
+  @include desktop{
     font-size: 18px;
     line-height: 1.277em;
-    display: flex;
-    margin-left: 72px;
+    display: flex;    
     min-width:515px ;
+    
   }
    
 }
+
 .modeling-hero>.container{
     position: relative;
 }

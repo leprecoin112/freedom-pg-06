@@ -1,20 +1,10 @@
 
-
-
-/*.modeling-creations__pre-title {
-    
-
-    @media screen and(min-width: 1440px) {
-       /* margin-top: 100px;
-        margin-bottom: 8px;
-
-    }
-}*/
 .modeling-creations {
+    margin-top: 60px;
+}
     
-    @media screen and(min-width:768px){
-        margin: right 0;
-    }
+    
+
 
 .modeling-creations__content {
     font-family: 'Cera Pro';
@@ -28,10 +18,7 @@
     margin-top: 16px;
    
 }
-/*li{
-position: relative;
 
-}*/
 
 .list {
     list-style: none;
@@ -39,16 +26,70 @@ position: relative;
 
 
    
-}
+
 .modeling-creations__list{
     width: 100%;
-    @media screen and(min-width:768px) {
-            display: flex;
+    background-size: 280px 164px;
+    background: no-repeat;
+    background-image:
+     url(/src/images/modeling-creation/bg-creations-jpg.jpg);
     
-            flex: 1 1;
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .modeling-creations {
+                background-image: url(/src/images/modeling-creation/bg-creations-2x.jpg);
+            }
         }
+    
+        @include tablet {
+           
+            flex: 1 1;
+            justify-content: space-between;
+            background-image:
+                url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
+    
+            background-size: 246px 144px;
+            background-position:right ;
+        
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .modeling-creations {
+                        background-image:
+                            url(/src/images/modeling-creation/bg-creations-tab-2x.jpg);
+                    }
+                }
+            }
+        
+          @include desktop {
+            
+            padding-left: 149px;
+            padding-right: 149px;
+            margin-right: 0;
+            background-size: 555px 301px;
+            background-position: right 149px top -60px;
+            background-image:
+             url(/src/images/modeling-creation/bg-creations-desk-jpg.jpg);
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .modeling-creations {
+                        background-image:
+                            url(/src/images/modeling-creation/bg-creations-desk-2x.jpg);
+                    }
+                }
+        
+        
+        
+        
+            }
+    
 
-    @media screen and(min-width:1440px) {
+   /* @media screen and(min-width:1440px) {
         width: 1376px;
       margin-right: 0;
       background-size: 555px 301px;
@@ -69,9 +110,9 @@ position: relative;
                 }
             }
     
-    }
+    }*/
 }
-.modeling-creations__background{
+/*.modeling-creations__background{
    min-width: 280px;
     min-height: 164px;
     margin-top: 40px;
@@ -101,7 +142,7 @@ position: relative;
                 url(/src/images/modeling-creation/bg-creations-tab-jpg.jpg);
     
             background-size: 246px 144px;
-            /*background-position: left 50vw;*/
+            /*background-position: left 50vw;
     
             @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
@@ -135,7 +176,7 @@ position: relative;
     
     
         }
-}
+}*/
 
 .section__pre-title{
     font-family: 'Cera Pro';
