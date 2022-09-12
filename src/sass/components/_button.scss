@@ -5,7 +5,7 @@
     height: 56px;
     margin: 0  auto;
 
-    @include fonts(700, 16, 21, 0.01, uppercase);
+    @include fonts(700, 16, 24, 0.01, uppercase);
     text-decoration: none;
 
     color: $secondaryTextColor;
