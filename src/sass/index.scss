@@ -1,11 +1,24 @@
+// ----------- base & utils -----------
 @import './base/common';
 @import './base/reset';
 @import './utils/vars';
 @import './utils/mixins';
 @import './utils/visually-hidden';
 
+// ----------- components ------------
 @import './components/container';
+@import './components/section';
 @import './components/contacts';
 @import './components/order-form';
-@import './layouts/_section';
+@import './components/video';
+
+@import './layouts/header';
+@import './layouts/gallery';
+@import './layouts/scan-process';
+@import './layouts/creation-methods';
+@import './layouts/contacts';
+@import './layouts/modeling-hero';
+@import './layouts/model-examples';
+@import './layouts/create-model';
+@import './layouts/scanning-hero';
 @import './layouts/footer';

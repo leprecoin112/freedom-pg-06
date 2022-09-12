@@ -12,6 +12,7 @@
   flex-wrap: $wrap;
 }
 
+// -------------MEDIA QUERY MIXIN --------------
 @mixin mobile {
   @media screen and (min-width: 480px) {
     @content;
@@ -30,6 +31,11 @@
   }
 }
 
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
 
 // -------------FONTS MIXIN --------------
 @mixin fonts($fw, $fs, $lh, $ls: false, $tt: false) {
@@ -57,7 +63,7 @@
 
 // Delete unit from incoming value
 @function strip-unit($number) {
-  @if type-of($number) == "number" and not unitless($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
     @return calc($number / ($number * 0 + 1));
   }
 
@@ -83,11 +89,11 @@
     $n: $n * 10;
   }
   @if $mode == round {
-    @return round($number * $n) / $n;
+    @return calc(round($number * $n) / $n);
   } @else if $mode == ceil {
-    @return ceil($number * $n) / $n;
+    @return calc(ceil($number * $n) / $n);
   } @else if $mode == floor {
-    @return floor($number * $n) / $n;
+    @return calc(floor($number * $n) / $n);
   } @else {
     @warn '#{ $mode } is undefined keyword.';
     @return $number;
@@ -96,15 +102,17 @@
 
 // -------------TRANSITION MIXIN --------------
 @mixin transition($property, $sproperty: false, $tproperty: false) {
-  $duration: var(--dur-time);
-  $timing-function: var(--bezier);
+  $duration: $dur-time;
+  $timing-function: $time-fun;
 
   @if $sproperty {
     @if $tproperty {
-      transition: $property $duration $timing-function, $sproperty $duration $timing-function,
+      transition: $property $duration $timing-function,
+        $sproperty $duration $timing-function,
         $tproperty $duration $timing-function;
     } @else {
-      transition: $property $duration $timing-function, $sproperty $duration $timing-function;
+      transition: $property $duration $timing-function,
+        $sproperty $duration $timing-function;
     }
   } @else {
     transition: $property $duration $timing-function;
