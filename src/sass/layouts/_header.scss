@@ -20,6 +20,7 @@
     position: relative;
     display: flex;
     height: 72px;
+    
   }
 
   &__logo {
@@ -79,8 +80,9 @@
   cursor: pointer;
   z-index: 100;
 }
-.open-mobile-phone-btn{
-  margin-left: 45px;
+
+.open-mobile-menu-btn{
+  margin: 0 auto;
 }
 .contacts__item:not(:last-child) {
   margin-bottom: 8px;
@@ -97,13 +99,14 @@
   .header__wrapper {
     display: flex;
     // justify-content: space-between;
+   
     position: relative;
     align-items: center;
   }
 
   .header__logo {
     position: relative;
-    margin-right: auto;
+    // margin-right: auto;
     z-index: 5;
   }
 
@@ -159,13 +162,13 @@
 
   .decor28 {
     top: -37px;
-    left: 102px;
+    left: 129px;
     border-radius: 50px 0px 0px 50px;
   }
 
   .decor29 {
     top:-37px;
-    right:231px;
+    right:50px;
     border-radius: 0px 50px 50px 0px;
   }
 }
@@ -205,7 +208,14 @@
 
     -webkit-text-stroke: 1px $secondaryTextColor;
   }
-
+ .sub-page__link:hover,
+ .sub-page__link:focus,
+ .page__link:hover,
+ .page__link:focus{
+  color: transparent;
+  
+    -webkit-text-stroke: 1px $secondaryTextColor;
+ }
   .sub-page__link {
     @include fonts(500, 24, 30.17);
     font-family: 'CeraPro';
@@ -244,10 +254,11 @@
     margin-top: 20px;
   }
 }
-
+   
 @include tablet {
   .header__wrapper {
     align-items: center;
+   
   }
 
   .header__logo {
@@ -272,6 +283,7 @@
     margin-bottom: 55px;
   }
   .open-mobile-menu-btn {
+    margin: 0;
     z-index: 3;
   }
   .open-mobile-phone-btn {
@@ -542,6 +554,7 @@
 
   .page__list {
     display: flex;
+    
   }
 
   .page__item:not(:last-child) {
@@ -559,6 +572,8 @@
     top: 20px;
     padding-top: 5px;
     z-index: 5;
+    
+   
   }
 
   .sub-page__item:not(:last-child) {
@@ -593,8 +608,9 @@
   .page__item:hover .sub-page__list {
     display: block;
     z-index: 5;
+    
   }
-
+ 
   .contacts__icon {
     margin-right: 8px;
   }
@@ -622,11 +638,19 @@
     border-radius: 0px 72px 72px 0px;
    }
      .decor24 {
-    top: 22px;
-    left: 540px;
+    top: -11px;
+    left: -36px;
      z-index: 0;
      border-radius: 0px 0px 72px 72px;
-  }
+     
+   }
+   .decor24{
+     opacity: 0;
+   }
+  .page__item:hover .decor24{
+    opacity: 1;
+   }
+ 
     .decor25 {
       top: -39px;
       left: 990px;
