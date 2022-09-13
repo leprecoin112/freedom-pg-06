@@ -1,104 +1,119 @@
 <section class="section--padding-bottom">
-    <div class="order__wrap-form container">
-        <div class="order">
-            <h2 class="order__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
-            <form class="order__form-form">
-                <div class="order__form-name">
-                    <input
-                    class="order__input"
-                    type="text"
-                    name="user-name"
-                    id="user-name"
-                    placeholder=" "
-                    required
-                    />
-                    <label class="order__label" for="user-name">Ім’я</label>
-                </div>
-                <div class="order__form-name">
-                    <input
-                    type="email"
-                    class="order__input"
-                    name="user-email"
-                    id="user-email"
-                    placeholder=" "
-                    required
-                    />
-                    <label class="order__label" for="user-email">Email</label>
-                </div>
-                <div class="form__select-wrap">
-                <select class="form__select" name="user-choise" id="user-choise">
-                    <option value="pet">Види пластику</option>
-                    <option value="pet">Поліетилен</option>
-                    <option value="hdpe">Поліетилен із високою щільністю</option>
-                    <option value="pp">Поліпропілен</option>
-                </select>
-                </div>
-                <div class="form__select-wrap">
-                <select class="form__select" name="user-choise" id="user-choise">
-                    <option value="300">Якість друку</option>
-                    <option value="300">300 мікрон</option>
-                    <option value="200">200 мікрон</option>
-                    <option value="100">100 мікрон</option>
-                    <option value="question">Труднощі у виборі - ми допоможемо</option>
-                </select></div>
-                <div class="form__select-wrap">
-                <select class="form__select" name="user-choise" id="user-choise">
-                    <option value="print" selected>Колір</option>
-                    <option value="red">Червоний</option>
-                    <option value="white">Білий</option>
-                    <option value="yelow">Жовтий</option>
-                    <option value="blue">Синій</option>
-                </select></div>
-            <div class="order__textaria">
-                <label class="order__label-text" for="user-text">Повідомлення</label>
-                <textarea
-                    class="order__text"
-                    name="user-text"
-                    id="user-text"
-                    placeholder="Залишіть своє повідомлення"
-                ></textarea>
-                <label class="atatch" for="atatch">
-                    <svg class="svg" width="21" height="20">
-                        <use href="./images/symbol-defs.svg#icon-atatch"></use>
-                    </svg>
-                </label>
-                <input
-                    class="form__label-file visually-hidden"
-                    type="file"
-                    id="atatch"
-                />
-                <p class="textaria__text">
-                *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-                </p>
-            </div>
-            <button type="submit" class="form__button-form button">Відправити</button>
-            </form>
+  <div class="order__wrap-form container">
+    <div class="order">
+      <h2 class="order__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+      <form class="order__form-form">
+        <div class="order__form-name">
+          <input
+            class="order__input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder=" "
+            required
+          />
+          <label class="order__label" for="user-name">Ім’я</label>
         </div>
+        <div class="order__form-name">
+          <input
+            type="email"
+            class="order__input"
+            name="user-email"
+            id="user-email"
+            placeholder=" "
+            required
+          />
+          <label class="order__label" for="user-email">Email</label>
+        </div>
+        <div class="form__select-wrap">
+          <select class="form__select" name="user-choise" id="user-choise">
+            <option value="pet">Види пластику</option>
+            <option value="pet">Поліетилен</option>
+            <option value="hdpe">Поліетилен із високою щільністю</option>
+            <option value="pp">Поліпропілен</option>
+          </select>
+        </div>
+        <div class="form__select-wrap">
+          <select class="form__select" name="user-choise" id="user-choise">
+            <option value="300">Якість друку</option>
+            <option value="300">300 мікрон</option>
+            <option value="200">200 мікрон</option>
+            <option value="100">100 мікрон</option>
+            <option value="question">Труднощі у виборі - ми допоможемо</option>
+          </select>
+        </div>
+        <div class="form__select-wrap">
+          <select class="form__select" name="user-choise" id="user-choise">
+            <option value="print" selected>Колір</option>
+            <option value="red">Червоний</option>
+            <option value="white">Білий</option>
+            <option value="yelow">Жовтий</option>
+            <option value="blue">Синій</option>
+          </select>
+        </div>
+        <div class="order__textaria">
+          <label class="order__label-text" for="user-text">Повідомлення</label>
+          <textarea
+            class="order__text"
+            name="user-text"
+            id="user-text"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+          <label class="atatch" for="atatch">
+            <svg class="svg" width="21" height="20">
+              <use href="./images/symbol-defs.svg#icon-atatch"></use>
+            </svg>
+          </label>
+          <input
+            class="form__label-file visually-hidden"
+            type="file"
+            id="atatch"
+          />
+          <p class="textaria__text">
+            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+          </p>
+        </div>
+        <button type="submit" class="form__button-form button">
+          Відправити
+        </button>
+      </form>
+    </div>
 
     <div class="contacts-fom__contacts">
-    <div class="contacts-fom__wrap-con">
-    <div class="contacts-fom__tel">
-        <h2 class="contacts-fom__title">ТЕЛЕФОНИ</h2>
-        <ul class="contacts-fom__list">
-            <li class="contacts-fom__item">+38 (095) -73-84-551</li>
-            <li class="contacts-fom__item">+38 (098) -00-25-235</li>
-        </ul>
-    </div>
-    <div class="contacts-fom__email">
-        <h2 class="contacts-fom__title">Email</h2>
-        <p class="contacts-fom__pmail">3dfreedom.info@gmail.com</p>
-    </div>
-    </div>
-    <div class="contacts-fom__time">
+      <div class="contacts-fom__wrap-con">
+        <div class="contacts-fom__tel">
+          <h2 class="contacts-fom__title">ТЕЛЕФОНИ</h2>
+          <ul class="contacts-fom__list">
+            <li class="contacts-fom__item">
+                <a  class="contacts-fom__phone" href="tel:+380957384551">+38 (095) -73-84-551</a></li>
+            <li class="contacts-fom__item">
+                <a  class="contacts-fom__phone" href="tel:+380957384551">+38 (098) -00-25-235</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-fom__email-fom">
+          <h2 class="contacts-fom__title">Email</h2>
+          <a class="contacts-fom__pmail" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
+        </div>
+      </div>
+      <div class="contacts-fom__time-fom">
         <h2 class="contacts-fom__title">Робочий час</h2>
         <ul class="contacts-fom__list">
-            <li class="contacts-fom__item">Пн-пт:</li>
-            <li class="contacts-fom__item">з 8:00 до 19:00</li>
+          <li class="contacts-fom__item">Пн-пт:</li>
+          <li class="contacts-fom__item">з 8:00 до 19:00</li>
         </ul>
         <ul class="contacts-fom__list">
-            <li class="contacts-fom__item">Сб, Нд:</li>
-            <li class="contacts-fom__item">з 10:00 до 17:00</li>
+          <li class="contacts-fom__item">Сб, Нд:</li>
+          <li class="contacts-fom__item">з 10:00 до 17:00</li>
         </ul>
-    </div>        
     </div>
+    <div class="contacts__mozaik">
+            <div class="contacts__mozaik-1"></div>
+            <div class="contacts__mozaik-2"></div>
+            <div class="contacts__mozaik-3"></div>
+            <div class="contacts__mozaik-4"></div>
+            <div class="contacts__mozaik-5"></div>
+            <div class="contacts__mozaik-6"></div>
+        </div>
+  </div>
 </section>
