@@ -12,9 +12,13 @@
 @import './components/order-form';
 @import './components/video';
 @import './components/button';
+@import './components/animations';
 
+// ------------ layouts -------------
 @import './layouts/header';
 @import './layouts/gallery';
+@import './layouts/more-photo';
+@import './layouts/scan-process';
 
 @import './layouts/contacts';
 @import './layouts/take-order-hero';

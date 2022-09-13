@@ -1,0 +1,13 @@
+@keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+        stroke: #8FC5E7;
+    }
+    100% {
+      transform: rotate(360deg);
+      stroke: #487996;
+    }
+  }

@@ -1,0 +1,43 @@
+.more-photo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 16px 0;
+
+    @include tablet{
+        gap: 32px;
+    }
+ 
+  
+    &__item {
+        cursor: pointer;
+
+        @media screen and (max-width: 767px){
+            &:nth-child(n + 4) {
+                display: none;
+            }
+        }       
+    }
+
+    &__load-icon { 
+        display: block;
+        width: 45px;
+        height: 45px;
+        margin: 0 auto; 
+
+        animation: loading infinite 3000ms 0ms;
+    }
+}
+.backdrop{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(43, 43, 43, 0.8);
+
+}
