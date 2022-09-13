@@ -142,8 +142,12 @@
 
   @include mobile {
     bottom: 55px;
-    left: 360px;
+    left: 400px;
   }
+  @include tablet {
+    bottom: 55px;
+    left: 360px;
+    }
   @include desktop {
     left: 515px;
     bottom: 35px;
