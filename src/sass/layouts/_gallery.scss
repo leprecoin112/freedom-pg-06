@@ -194,23 +194,23 @@
   }
 }
 
-// .gallery__decorbottom {
-//   @include desktop {
-//     position: absolute;
-//     width: 194px;
-//     height: 144px;
-//     bottom: -100px;
-//     left: 1200px;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     border-radius: 50%;
-//     background-image: url(../images/tank-1x.jpg);
+.gallery__decorbottom {
+  @include desktop {
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    bottom: -100px;
+    left: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    background-image: url(../images/tank-1x.jpg);
 
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url(../images/tank-2x.jpg);
-//     }
-//   }
-// }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tank-2x.jpg);
+    }
+  }
+}
