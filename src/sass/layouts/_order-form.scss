@@ -16,6 +16,10 @@
     flex-direction: column;
     margin-bottom: 0;
   }
+
+  @include desktop {
+    width: 555px;
+  }
 }
 
 .form__button-form {
