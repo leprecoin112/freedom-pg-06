@@ -12,13 +12,8 @@
 }
 
 .order__form-form {
-    margin-bottom: 60px;
-
     @include tablet {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 0;
     }
 }
@@ -37,7 +32,7 @@
 
     &:hover,
     &:focus {
-        color: black;
+        color: white;
     }
 
     @include mobile {
@@ -108,7 +103,7 @@
     
 }
 
-.contacts__contacts {
+.contacts-fom__contacts {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -126,12 +121,11 @@
 
     @include desktop {
         flex-direction: column;
-        justify-content: center;
         gap: 30px;
     }
 }
 
-.contacts__wrap-con {
+.contacts-fom__wrap-con {
     display: block;
 
     @include mobile {
