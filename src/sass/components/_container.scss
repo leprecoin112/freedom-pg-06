@@ -10,6 +10,10 @@
     max-width: 480px;
   }
 
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+
   @include tablet {
     padding-left: 32px;
     padding-right: 32px;
