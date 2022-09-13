@@ -56,7 +56,17 @@
   font-style: normal;
   font-family: 'CeraPro';
   color: $primaryTextColor;
+  
 }
+.footer-nav__link:focus,
+.footer-nav__link:hover,
+.social__link:focus,
+.social__link:hover{
+  color: $secondaryTextColor;
+  @include transition($primaryTextColor, $sproperty: false, $tproperty: false);
+    
+}
+
 .tel__item:not(:last-child) {
   margin-bottom: 8px;
 }
