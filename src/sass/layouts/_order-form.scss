@@ -19,8 +19,7 @@
 
 .form__button-form {
   font-family: 'CeraPro';
-  letter-spacing: 0.1em;
-  @include fonts(700, 16, 24, 0.01, uppercase);
+  @include fonts(700, 16, 24, 0.1, uppercase);
   width: 280px;
   height: 56px;
   border: none;
