@@ -4,16 +4,19 @@
   }
 }
 .take-order-hero {
-  padding-top: 40px;
+  padding-top: 92px;
   padding-bottom: 40px;
+  @include tablet {
+    padding-top: 104px;
+  }
   @include desktop {
-    padding-top: 100px;
+    padding-top: 190px;
     padding-bottom: 100px;
   }
 }
 
 .take-order-hero__title {
-  font-family: 'Cera Pro';
+  font-family: 'CeraPro';
   @include fonts(700, 24, 30, null, uppercase);
   margin-bottom: 16px;
   text-align: center;
@@ -29,11 +32,16 @@
 }
 
 .take-order-hero__flex {
+  margin-top: 16px;
   @include tablet {
     display: flex;
     gap: 32px;
     justify-content: center;
     align-items: center;
+  }
+
+  @include desktop {
+    margin-top: 24px;
   }
 }
 
@@ -90,7 +98,7 @@
 }
 
 .take-order-hero__text {
-  font-family: 'Cera Pro';
+  font-family: 'CeraPro';
   @include fonts(300, 16, 20, null);
   color: $primaryTextColor;
   @include tablet {

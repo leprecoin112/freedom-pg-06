@@ -1,126 +1,132 @@
 .contacts-hero {
-    font-family: "CeraPro", "CaviarDreams", sans-serif;
+  font-family: 'CeraPro', 'CaviarDreams', sans-serif;
+  padding-top: 92px;
+  @include tablet {
+    padding-top: 104px;
+  }
+  @include desktop {
+    padding-top: 190px;
+  }
 }
 
 .contacts-hero__container {
-    position: relative;
+  position: relative;
 
-    @include desktop {
-        padding-left: 149px;
-        padding-right: 149px;
-    }
+  @include desktop {
+    padding-left: 149px;
+    padding-right: 149px;
+  }
 }
 
 .contacts-hero__title {
-    margin-bottom: 16px;
-    @include fonts(700, 24, 30, null, uppercase);
-    color: $secondaryTextColor;
+  margin-bottom: 16px;
+  @include fonts(700, 24, 30, null, uppercase);
+  color: $secondaryTextColor;
 
-    @include tablet {
-        @include fonts(700, 36, 45, null, uppercase);
-    }
+  @include tablet {
+    @include fonts(700, 36, 45, null, uppercase);
+  }
 
-    @include desktop {
-        @include fonts(null, 48, 60, null, uppercase);
-        margin-bottom: 24px;
-    }
+  @include desktop {
+    @include fonts(null, 48, 60, null, uppercase);
+    margin-bottom: 24px;
+  }
 }
 
 .contacts-hero__content {
-    @include tablet {
-        display: flex;
-        gap: 32px;
-    }
+  @include tablet {
+    display: flex;
+    gap: 32px;
+  }
 }
 
 .contacts-hero__decor {
-    position: absolute;
-    z-index: -1;
-    width: 74px;
-    height: 74px;
-    background-color: $primaryBgColor;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: -1;
+  width: 74px;
+  height: 74px;
+  background-color: $primaryBgColor;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 
-    &--left {
-        top: 203px;
-        left: -29px;
-        border-radius: 0px 0px 35px 0px;
+  &--left {
+    top: 203px;
+    left: -29px;
+    border-radius: 0px 0px 35px 0px;
 
-        @include tablet {
-            display: none;
-        }
-
-        @include desktop {
-            display: block;
-            top: 0px;
-            left: 35px;
-            width: 82px;
-            height: 78px;
-            border-radius: 0px 0px 72px 0px;
-        }
+    @include tablet {
+      display: none;
     }
 
-    &--right {
-        display: none;
-        width: 71px;
-        height: 64px;
-        top: -32px;
-        right: 32px;
-        border-radius: 0px 35px 0px 0px;
-        transform: rotate(180deg);
-        box-shadow: -20px -20px 80px rgba(0, 0, 0, 0.1);
-
-        @include tablet {
-            display: block;
-        }
-
-        @include desktop {
-            top: -40px;
-            width: 83px;
-            height: 137px;
-            border-radius: 0px 0px 72px 0px;
-            transform: rotate(90deg);
-            box-shadow: 20px -20px 80px rgba(0, 0, 0, 0.1);
-        }
+    @include desktop {
+      display: block;
+      top: 0px;
+      left: 35px;
+      width: 82px;
+      height: 78px;
+      border-radius: 0px 0px 72px 0px;
     }
+  }
+
+  &--right {
+    display: none;
+    width: 71px;
+    height: 64px;
+    top: -32px;
+    right: 32px;
+    border-radius: 0px 35px 0px 0px;
+    transform: rotate(180deg);
+    box-shadow: -20px -20px 80px rgba(0, 0, 0, 0.1);
+
+    @include tablet {
+      display: block;
+    }
+
+    @include desktop {
+      top: -40px;
+      width: 83px;
+      height: 137px;
+      border-radius: 0px 0px 72px 0px;
+      transform: rotate(90deg);
+      box-shadow: 20px -20px 80px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 .contacts-hero__descr {
-    color: $primaryTextColor;
-    @include fonts (400, 16, 20);
+  color: $primaryTextColor;
+  @include fonts(400, 16, 20);
 
-    @include tablet {
-        width: 336px;
-    }
+  @include tablet {
+    width: 336px;
+  }
 
-    @include desktop {
-        width: 515px;
-        @include fonts (300, 18, 23);
-    }
+  @include desktop {
+    width: 515px;
+    @include fonts(300, 18, 23);
+  }
 }
 
 .contacts-hero__text {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
-    &:not(:last-child) {
-        margin-bottom: 16px;
+  &:last-child {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    @include desktop {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 56px;
     }
-
-    &:last-child {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-
-        @include desktop {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 56px;
-        }
-    }
+  }
 }
 
 .contacts-hero__emoji {
-    font-size: 22px;
-    @include desktop {
-        font-size: 49px;
-    }
+  font-size: 22px;
+  @include desktop {
+    font-size: 49px;
+  }
 }

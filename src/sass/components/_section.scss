@@ -35,6 +35,7 @@
 }
 
 .section-main__hero {
+  background-color: rgb(199, 193, 193);
   padding-top: 92px;
   padding-bottom: 40px;
 
@@ -116,7 +117,7 @@
 }
 
 .section-main__hero-title {
-  font-family: 'Caviar Dreams';
+  font-family: 'CaviarDreams';
   @include fonts(400, 18, 21, null, uppercase);
   color: $primaryTextColor;
 
