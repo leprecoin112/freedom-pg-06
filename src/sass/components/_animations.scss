@@ -1,6 +1,7 @@
 @keyframes loading {
     0% {
       transform: rotate(0deg);
+      stroke: #487996;
     }
     50%{
         transform: rotate(180deg);
