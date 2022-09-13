@@ -1,269 +1,243 @@
-
 .process-description__text {
-    // font-family: 'Cera Pro';
+  font-family: 'CeraPro';
 
-    @include fonts(300, 16, 20);
-    margin-bottom: 16px;
-    color: $primaryTextColor;
+  @include fonts(300, 16, 20);
+  margin-bottom: 16px;
+  color: $primaryTextColor;
 
-    @include tablet {
-        @include fonts(400, 16, 20);
-    }
+  @include desktop {
+    @include fonts(300, 18, 23);
+  }
+
+  span {
+    @include fonts(700, 16, 20);
+
+    color: $secondaryTextColor;
 
     @include desktop {
-        @include fonts(700, 18, 23);
+      @include fonts(700, 18, 23);
     }
+  }
 
-    span {
-        @include fonts(700, 16, 20);
+  &:last-of-type {
+    margin-bottom: 24px;
 
-        color: $secondaryTextColor;
-
-        @include desktop {
-            @include fonts(700, 18, 23);
-        }
-
+    @include tablet {
+      margin-bottom: 56px;
     }
-
-    &:last-of-type {
-        margin-bottom: 24px;
-
-        @include tablet {
-            margin-bottom: 56px;
-        }
-    }
+  }
 }
 
 .process-description__item:first-child {
-    margin-bottom: 54px;
+  margin-bottom: 54px;
 
-    @include tablet {
-        margin-bottom: 0px;
-    }
+  @include tablet {
+    margin-bottom: 0px;
+  }
 }
 
 .process-description__item:nth-last-child(2) {
-    margin-bottom: 51px;
+  margin-bottom: 51px;
 
-    @include tablet {
-        margin-bottom: 0px;
-    }
+  @include tablet {
+    margin-bottom: 0px;
+  }
 }
 
 // .process-description__item:last-child {
 //     margin-bottom: 60px;
 
-
 // }
 .process-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  @include tablet {
+    // display: flex;
+    flex-direction: column;
+    // flex-wrap: nowrap;
+    // gap: 60px;
+    @include flexGapWrap(flex, 60px, nowrap);
+  }
 
-    @include tablet {
-        // display: flex;
-        flex-direction: column;
-        // flex-wrap: nowrap;
-        // gap: 60px;
-        @include flexGapWrap(flex, 60px, nowrap)
-    }
-
-    @include desktop {
-        gap: 100px;
-    }
+  @include desktop {
+    gap: 100px;
+  }
 }
-.process-description__container{
-    @include tablet{
-        width: 336px;
-
-    }
-    @include desktop{
-        width: 734px;
-
-    }
+.process-description__container {
+  @include tablet {
+    width: 336px;
+  }
+  @include desktop {
+    width: 734px;
+  }
 }
 
 .process-description__item {
-    max-width: 280px;
+  max-width: 280px;
 
+  @include tablet {
+    // display: flex;
+    // gap: 32px;
+    @include flexGapWrap(flex, 32px, nowrap);
+    max-width: 100%;
+  }
 
-    @include tablet {
-        // display: flex;
-        // gap: 32px;
-        @include flexGapWrap(flex, 32px, nowrap);
-        max-width: 100%;
-    }
-
-    @include desktop {
-        gap: 85px;
-        max-width: 1055px;
-        margin-left: 149px;
-    }
+  @include desktop {
+    gap: 85px;
+    max-width: 1055px;
+    margin-left: 149px;
+  }
 }
 
 .process-description__item:first-child .process-description__img {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    @include tablet {
-        margin-bottom: 0px;
-    }
+  @include tablet {
+    margin-bottom: 0px;
+  }
 }
 
 .process-description__item:nth-last-child(2) .process-description__img {
-    margin-bottom: 23px;
+  margin-bottom: 23px;
 
-    @include tablet {
-        margin-bottom: 0px;
-    }
+  @include tablet {
+    margin-bottom: 0px;
+  }
 }
 
 .process-description__item:last-child .process-description__img {
-    margin-bottom: 27px;
+  margin-bottom: 27px;
 
-    @include tablet {
-        margin-bottom: 0px;
-    }
+  @include tablet {
+    margin-bottom: 0px;
+  }
 }
 
 .process-description__img {
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.15));
-    border-radius: 50px 0px;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.15));
+  border-radius: 50px 0px;
 
-    @include tablet {
-        width: auto;
-    }
-    @include desktop{
-        width: auto;
-    }
+  @include tablet {
+    width: auto;
+  }
+  @include desktop {
+    width: auto;
+  }
 }
 
 .reatangle-accent1 {
-    width: 73.65px;
-    height: 73.65px;
+  width: 73.65px;
+  height: 73.65px;
+  background: $primaryBgColor;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
+  position: absolute;
+  left: 261px;
+  top: 72.71px;
+  // z-index: -1;
+  @include mobile {
+    left: 341px;
+  }
+
+  @include tablet {
+    width: 71.41px;
+    height: 74.08px;
     background: $primaryBgColor;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px;
-    position: absolute;
-    left: 261px;
-    top: 72.71px;
-    // z-index: -1;
-    @include mobile {
-            left: 341px;
-        }
-
-
-    @include tablet {
-        width: 71.41px;
-        height: 74.08px;
-        background:$primaryBgColor;
-        left: -17px;
-        top: 942.75px;
+    left: -17px;
+    top: 942.75px;
 
     @include desktop {
-            width: 136.83px;
-            height: 144px;
-            background: $primaryBgColor;
-            left: -21.82px;
-            top: 62.01px;
-
-        }
-
+      width: 136.83px;
+      height: 144px;
+      background: $primaryBgColor;
+      left: -21.82px;
+      top: 62.01px;
     }
+  }
 }
 
 .reatangle-accent2 {
-    width: 73.65px;
-    height: 73.65px;
-    background: $primaryBgColor;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 25px 0px;
-    position: absolute;
-    left: -17px;
-    top: 135.11px;
-    // z-index: -1;
-    @include mobile{
+  width: 73.65px;
+  height: 73.65px;
+  background: $primaryBgColor;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  position: absolute;
+  left: -17px;
+  top: 135.11px;
+  // z-index: -1;
+  @include mobile {
     left: 63px;
-    }
+  }
 
-
-    @include tablet {
-        width: 71.41px;
-        height: 74.08px;
-        background: $primaryBgColor;
-        left: 664.59px;
-        top: 78.65px;
-        z-index: -1;
+  @include tablet {
+    width: 71.41px;
+    height: 74.08px;
+    background: $primaryBgColor;
+    left: 664.59px;
+    top: 78.65px;
+    z-index: -1;
 
     @include desktop {
-        width: 136.83px;
-        height: 144px;
-        background: $primaryBgColor;
-        left: 1272px;
-        top: -51px;
-        border-radius: 72px 0px;
-
-        }
-
+      width: 136.83px;
+      height: 144px;
+      background: $primaryBgColor;
+      left: 1272px;
+      top: -51px;
+      border-radius: 72px 0px;
     }
-
+  }
 }
 
 .reatangle-accent3 {
-    width: 73.65px;
-    height: 73.65px;
+  width: 73.65px;
+  height: 73.65px;
+  background: $primaryBgColor;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -40.65px;
+  top: 502.83px;
+  // z-index: -1;
+  @include mobile {
+    left: 341px;
+  }
+
+  @include tablet {
+    width: 71.41px;
+    height: 74.08px;
     background: $primaryBgColor;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 25px 0px;
-    transform: rotate(90deg);
-    position: absolute;
-    right: -40.65px;
-    top: 502.83px;
-    // z-index: -1;
-    @include mobile {
-            left: 341px;
-        }
-    
-
-
-    @include tablet {
-        width: 71.41px;
-        height: 74.08px;
-        background: $primaryBgColor;
-        left: 664.59px;
-        top: 643.88px;
-        z-index: -1;
+    left: 664.59px;
+    top: 643.88px;
+    z-index: -1;
 
     @include desktop {
-            display: none;
-        }
-
+      display: none;
     }
-
+  }
 }
 
 .reatangle-accent4 {
-    width: 73.65px;
-    height: 73.65px;
-    background: $primaryBgColor;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 0px 72px;
-    position: absolute;
-    left: -18px;
-    top: 545.83px;
-    z-index: -1;
-    @include mobile {
-            left: 63px;
-            
-        }
-    @include tablet {
-            visibility: hidden;
-        }
+  width: 73.65px;
+  height: 73.65px;
+  background: $primaryBgColor;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 72px;
+  position: absolute;
+  left: -18px;
+  top: 545.83px;
+  z-index: -1;
+  @include mobile {
+    left: 63px;
+  }
+  @include tablet {
+    visibility: hidden;
+  }
 
-
-    
-
-    @include desktop {
+  @include desktop {
     width: 143.77px;
     height: 116px;
     position: absolute;
@@ -271,45 +245,33 @@
     left: 1127px;
     top: 1047px;
     visibility: visible;
-
-    }
-    
-    
+  }
 }
 
 .reatangle-accent5 {
-    width: 73.65px;
-    height: 73.65px;
+  width: 73.65px;
+  height: 73.65px;
+  background: $primaryBgColor;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  position: absolute;
+  left: 261px;
+  top: 844.57px;
+  @include mobile {
+    left: 341px;
+  }
+
+  @include tablet {
+    visibility: hidden;
+  }
+
+  @include desktop {
+    width: 143.77px;
+    height: 145px;
     background: $primaryBgColor;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 25px 0px;
-    position: absolute;
-    left: 261px;
-    top: 844.57px;
-    @include mobile {
-            left: 341px;
-        }
-
-
-    @include tablet {
-        visibility: hidden;
-    }
-
-    @include desktop {
-        width: 143.77px;
-        height: 145px;
-        background: $primaryBgColor;
-        left: 1272px;
-        top: 902px;
-        visibility: visible;
-        border-radius: 72px 0px;
-
-    }
-
-}
-
-
-
-.container--overflow{
-    overflow: hidden;
+    left: 1272px;
+    top: 902px;
+    visibility: visible;
+    border-radius: 72px 0px;
+  }
 }

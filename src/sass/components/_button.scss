@@ -1,34 +1,39 @@
 /* ------------------ BUTTON ---------------- */
-.button{
-    @include flexCentered(flex);
-    width: 280px;
-    height: 56px;
-    margin: 0  auto;
+.button {
+  @include flexCentered(flex);
+  width: 280px;
+  height: 56px;
+  margin: 0 auto;
 
-    @include fonts(700, 16, 24, 0.01, uppercase);
-    text-decoration: none;
+  @include fonts(700, 16, 24, 0.01, uppercase);
+  text-decoration: none;
 
-    color: $secondaryTextColor;
-    background: $primaryButtonColor;
-    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
-    border-radius: 30.5px;
-    cursor: pointer;
-    @include transition(color, background-color);
-  
-    &:hover,
-    &:focus {
-        background-color: $secondaryTextColor;
-        color: #FFFFFF;
+  color: $secondaryTextColor;
+  background: $primaryButtonColor;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+  cursor: pointer;
+  @include transition(color, background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $secondaryTextColor;
+    color: #ffffff;
+  }
+  @include tablet {
+    width: 277px;
+  }
+
+  &--order-form {
+    width: 177px;
+
+    @media screen and (max-width: 767px) {
+      width: 280px;
     }
-    @include tablet{
-        width: 277px;
-    }
+  }
 
-    &--order-form {
-        width: 177px;
-    
-        @media screen and (max-width: 767px){
-            width: 280px;
-        }
-    }             
+  &--left {
+    margin: 0;
+  }
 }
