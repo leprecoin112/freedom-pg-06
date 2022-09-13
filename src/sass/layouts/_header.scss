@@ -70,6 +70,7 @@
   font-family: 'CaviarDreams';
   color: #bdbdbd;
 }
+
 .close-mobile-menu-btn,
 .open-mobile-menu-btn,
 .open-mobile-phone-btn {
@@ -96,6 +97,9 @@
 
 
 @media screen and (max-width: 767px) {
+  .container{
+    max-width: 480px;
+  }
   .header__wrapper {
     display: flex;
     // justify-content: space-between;
@@ -143,8 +147,10 @@
   .contacts__icon {
     display: none;
   }
-  .box{
+ 
+  .box1{
     position: relative;
+    
   }
 }
 
@@ -156,19 +162,19 @@
     position: absolute;
     width: 74px;
     height: 74px;
-    z-index: 4;
+    z-index: 14;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   }
 
   .decor28 {
-    top: -37px;
-    left: 129px;
+    top: 0;
+    right: -24px;
     border-radius: 50px 0px 0px 50px;
   }
 
   .decor29 {
-    top:-37px;
-    right:50px;
+    top:0;
+   left: 0;
     border-radius: 0px 50px 50px 0px;
   }
 }
@@ -200,13 +206,13 @@
     @include fonts(700, 24, 30.17);
     text-transform: uppercase;
     font-family: 'CeraPro';
-    color: $secondaryTextColor;
+  color: $secondaryTextColor;
+    
   }
 
   .page__link--active {
-    color: transparent;
-
-    -webkit-text-stroke: 1px $secondaryTextColor;
+   
+    color: $secondaryTextColor;
   }
  .sub-page__link:hover,
  .sub-page__link:focus,
@@ -240,7 +246,7 @@
     height: 7px;
     border-radius: 3px 0px 3px 0px;
     background-color: $secondaryTextColor;
-    display: inline-block;
+   display: inline-block;
     margin-right: 9px;
     margin-bottom: 4px;
   }
