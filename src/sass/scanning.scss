@@ -1,0 +1,17 @@
+// ----------- base & utils -----------
+@import './base/common';
+@import './base/reset';
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+
+// ----------- components ------------
+@import './components/container';
+@import './components/section';
+@import './components/button';
+
+@import './layouts/header';
+@import './layouts/scanning-hero';
+@import './layouts/scan-process';
+
+@import './layouts/footer';
