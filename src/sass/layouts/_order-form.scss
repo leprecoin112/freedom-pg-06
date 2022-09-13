@@ -12,6 +12,7 @@
 
 .order__form-form {
   @include tablet {
+    width: 400px;
     flex-direction: column;
     margin-bottom: 0;
   }
@@ -105,10 +106,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-
+  align-items: flex-start;
   @include mobile {
-    align-items: center;
-    justify-content: center;
   }
 
   @include tablet {
@@ -119,6 +118,7 @@
 
   @include desktop {
     flex-direction: column;
+    align-items: flex-end;
     gap: 30px;
   }
 }

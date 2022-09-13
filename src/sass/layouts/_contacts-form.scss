@@ -17,6 +17,7 @@
     flex-direction: column;
   }
   @include tablet {
+    align-items: center;
     margin-bottom: 60px;
   }
   @include desktop {
@@ -222,11 +223,8 @@
 
 .contacts-fom__wrap {
   display: block;
-  @include mobile {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
   @include tablet {
     align-items: flex-start;
     gap: 20px;
@@ -251,14 +249,13 @@
 
 .contacts-fom__title {
   display: flex;
-  font-family: 'CarePro';
   @include fonts(700, 18, 23);
   color: #487996;
   margin-bottom: 8px;
-  @include mobile {
-    justify-content: center;
-  }
+  justify-content: start;
+  text-transform: uppercase;
   @include tablet {
+    @include fonts(700, 24, 30);
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -269,7 +266,6 @@
 }
 
 .contacts-fom__email {
-  font-family: 'CarePro';
   @include fonts(400, 16, 20);
   color: #2b2b2b;
   @include desktop {
@@ -281,7 +277,6 @@
 }
 
 .contacts-fom__item {
-  font-family: 'CarePro';
   @include fonts(400, 16, 20);
   text-transform: capitalize;
   color: #2b2b2b;
@@ -301,7 +296,6 @@
 .contacts-fom__time > .contacts-fom__list {
   @include mobile {
     display: flex;
-    align-items: center;
     flex-direction: column;
   }
   @include tablet {
@@ -309,6 +303,12 @@
   }
   @include desktop {
     flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.left {
+  @include desktop {
     align-items: flex-start;
   }
 }
