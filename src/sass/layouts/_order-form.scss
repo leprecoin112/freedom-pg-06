@@ -1,272 +1,265 @@
-
 .order__wrap-form {
-    position: relative;
-    @include desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: baseline;
-        padding-left: 149px;
-        padding-right: 149px;
-    }
+  position: relative;
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 149px;
+    padding-right: 149px;
+  }
 }
 
 .order__form-form {
-    @include tablet {
-        flex-direction: column;
-        margin-bottom: 0;
-    }
+  @include tablet {
+    width: 400px;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .form__button-form {
-    @include fonts(700, 16, 24, 0.01, uppercase);
-    width: 280px;
-    height: 56px;
-    border: none;
-    cursor: pointer;
-    background-color: $secondaryBgColor;
-    color: $secondaryTextColor;
-    border-radius: 30.5px;
-    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'CeraPro';
+  @include fonts(700, 16, 24, 0.1, uppercase);
+  width: 280px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+  background-color: $secondaryBgColor;
+  color: $secondaryTextColor;
+  border-radius: 30.5px;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        color: white;
-    }
+  &:hover,
+  &:focus {
+    color: white;
+  }
 
-    @include mobile {
-        display: block;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-    }
-    @include tablet {
-        width: 175px;
-        height: 55px;
-        margin-right: 0;
-    }
-    @include desktop {
-        @include fonts(700, 18, 24, 0.01, uppercase);
-        width: 175px;
-        height: 55px;
-        margin-right: 0;
-    }
+  @include mobile {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  @include tablet {
+    width: 175px;
+    height: 55px;
+    margin-right: 0;
+  }
+  @include desktop {
+    @include fonts(700, 18, 24, 0.01, uppercase);
+    width: 175px;
+    height: 55px;
+    margin-right: 0;
+  }
 }
 
 .form__select {
-    width: 100%;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #487996;
-    text-align: start;
-    appearance: none;
-    outline: none;
-    background-color: transparent;
-    padding-bottom: 4px;
-    cursor: pointer;
-    @include fonts(400, 16, 20);
-    @include desktop {
-        @include fonts(400, 18, 20);
-    }
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #487996;
+  text-align: start;
+  appearance: none;
+  outline: none;
+  background-color: transparent;
+  padding-bottom: 4px;
+  cursor: pointer;
+  @include fonts(400, 16, 20);
+  @include desktop {
+    @include fonts(400, 18, 20);
+  }
 }
 
 .form__select-wrap {
-    position: relative;
-    width: 280px;
-    height: 24px;
-    margin-bottom: 44px;
-    @include mobile {
-            width: 400px;
-        }
-    
-        @include tablet {
-            width: 400px;
-        }
-    
-        @include desktop {
-            width: 555px;
-        }
+  position: relative;
+  width: 100%;
+  height: 24px;
+  margin-bottom: 44px;
+
+  @include tablet {
+    width: 400px;
+  }
+
+  @include desktop {
+    width: 555px;
+  }
 }
 
 .form__select-wrap::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    display: block;
-    width: 20px;
-    height: 13px;
-    pointer-events: none;
-    background-image: url(/src/images/down.jpg);
-    background-repeat: no-repeat;
-    
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 13px;
+  pointer-events: none;
+  background-image: url(/src/images/down.jpg);
+  background-repeat: no-repeat;
 }
 
 .contacts-fom__contacts {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  @include mobile {
+  }
+
+  @include tablet {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  @include desktop {
     flex-direction: column;
-    gap: 24px;
-
-    @include mobile {
-        align-items: center;
-        justify-content: center;
-    }
-
-    @include tablet {
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
-    }
-
-    @include desktop {
-        flex-direction: column;
-        gap: 30px;
-        align-items: flex-end;
-    }
+    gap: 30px;
+    align-items: flex-end;
+  }
 }
 
 .contacts-fom__wrap-con {
-    display: block;
+  display: block;
 
-    @include mobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    @include tablet {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 20px;
-        text-align: start;
-        flex-direction: row;
-    }
+  @include tablet {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: start;
+    flex-direction: row;
+  }
 
-    @include desktop {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        text-align: right;
-        align-items: flex-end;
-    }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: right;
+    align-items: flex-end;
+  }
 }
 
 .contacts-fom__email-fom {
-    @include desktop {
+  @include desktop {
     display: flex;
-        flex-direction: column;
-        text-align: right;
-        align-items: flex-end;
-    }
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+  }
 }
 
 .contacts-fom__time-fom {
-
-    @include desktop {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-bottom: 20px;
-    }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
 }
 
-.contacts-fom__time-fom >.contacts-fom__list {
-    @include mobile {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+.contacts-fom__time-fom > .contacts-fom__list {
+  @include mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    @include tablet {
-        align-items: flex-end;
-    }
+  @include tablet {
+    align-items: flex-end;
+  }
 
-    @include desktop {
-        flex-direction: row;
-        align-items: flex-start;
-    }
+  @include desktop {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .contacts__mozaik {
-    width: 438px;
-    height: 278px;
-    flex-wrap: wrap;
-    gap: 10px;
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
-    @include mobile {
-        display: none;
-        }
-    
-    @include tablet {
-        display: none;
-        }
-    @include desktop {
-        display: flex;
-    }
+  width: 438px;
+  height: 278px;
+  flex-wrap: wrap;
+  gap: 10px;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  @include mobile {
+    display: none;
+  }
 
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+  }
 }
 
-
 .contacts__mozaik-1 {
-    width: 139px;
-    height: 139px;
-    background-image: url(/src/images/mozaik.jpg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 437px 293px;
-    border-radius: 0 72px 0 0;
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 0 72px 0 0;
 }
 
 .contacts__mozaik-2 {
-    width: 139px;
-    height: 139px;
-    background-image: url(/src/images/mozaik.jpg);
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: 437px 293px;
-    border-radius: 0px 0px 0px 72px;
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 0px 0px 0px 72px;
 }
 
 .contacts__mozaik-3 {
-    width: 139px;
-    height: 139px;
-    background-image: url(/src/images/mozaik.jpg);
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    background-size: 437px 293px;
-    border-radius: 72px 0px;
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 72px 0px;
 }
 
 .contacts__mozaik-4 {
-    width: 139px;
-    height: 139px;
-    background-image: url(/src/images/mozaik.jpg);
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    background-size: 437px 293px;
-    border-radius: 72px 0px;
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 72px 0px;
 }
 
 .contacts__mozaik-5 {
-    width: 139px;
-    height: 139px;
-    background-image: url(/src/images/mozaik.jpg);
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-size: 437px 293px;
-    border-radius: 72px;
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 72px;
 }
 
 .contacts__mozaik-6 {
-    width: 139px;
-    height: 139px;
-    background-image: url(/src/images/mozaik.jpg);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: 437px 293px;
-    border-radius: 0px 0px 72px 0px;
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 0px 0px 72px 0px;
 }

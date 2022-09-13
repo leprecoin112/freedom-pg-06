@@ -9,12 +9,12 @@
 @import './components/container';
 @import './components/section';
 @import './components/button';
-@import './components/animations';
+@import './components/video';
 
-// ------------ layouts -------------
 @import './layouts/header';
-@import './layouts/main-hero';
-@import './layouts/gallery';
-@import './layouts/more-photo';
+@import './layouts/take-order-hero';
+@import './layouts/order-form';
+@import './layouts/contacts';
+@import './layouts/contacts-form';
 
 @import './layouts/footer';

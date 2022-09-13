@@ -24,3 +24,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+section {
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+}
