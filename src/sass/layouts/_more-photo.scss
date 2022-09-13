@@ -25,6 +25,8 @@
         width: 45px;
         height: 45px;
         margin: 0 auto; 
+
+        animation: loading infinite 3000ms 0ms;
     }
 }
 .backdrop{
