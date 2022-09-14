@@ -20,15 +20,6 @@ img {
   // padding-top: 40px;
   padding-top: 114px;
   padding-bottom: 40px;
-  @media screen and (min-width: 768px) {
-    & {
-      // padding-top: 104px;
-      // padding-top: 30px;
-      // padding-bottom: 19px;
-      padding-bottom: 60px;
-      // height: 434px;
-    }
-  }
 
   @media screen and (min-width: 1440px) {
     & {
@@ -100,7 +91,7 @@ img {
 }
 
 .hero-box6 {
-  bottom: -68px;
+  bottom: -73px;
   left: -29px;
   border-radius: 0px 0px 35px 0px;
   display: flex;
@@ -112,7 +103,6 @@ img {
   //     }
   // }
   position: absolute;
-  z-index: 22;
   // border: 1px solid #000;
 }
 
