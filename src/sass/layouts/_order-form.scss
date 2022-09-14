@@ -10,6 +10,19 @@
   }
 }
 
+.order__wrap-form-circle {
+  @include desktop {
+      position: absolute;
+        content: "";
+        width: 136px;
+        height: 144px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px;
+        left: -60px;
+        top: 30px;
+  }
+}
+
 .order__form-form {
   @include tablet {
     width: 400px;
