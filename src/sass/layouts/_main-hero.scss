@@ -12,6 +12,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    vertical-align: top;
 }
 
 .hero-section {
@@ -30,8 +31,9 @@ img {
     
     @media screen and (min-width: 1440px) {
         & {
-            // padding-top: 188px;
+            padding-top: 188px;
             padding-top: 44px;
+            // padding-top: 250px;
             padding-bottom: 120px;
             // height: 844px;
         }
@@ -114,7 +116,7 @@ img {
     }
     position: absolute;
     z-index: 22;
-    border: 1px solid #000;
+    // border: 1px solid #000;
 }
 
 .hero-box8 {
@@ -366,14 +368,14 @@ img {
         }
     }
 
-    &>*:not(:last-child) {
-        margin-bottom: 32px;
-        @media screen and (min-width: 768px) {
-                &>*:not(:last-child) {
-                    margin-bottom: 60px;
-                }
-            }
-    } 
+    // &>*:not(:last-child) {
+    //     margin-bottom: 32px;
+    //     @media screen and (min-width: 768px) {
+    //             & > *:not(:last-child) {
+    //                 margin-bottom: 60px;
+    //             }
+    //         }
+    // } 
 }
 
 .hero__list {
@@ -381,9 +383,12 @@ img {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    // height: 203px;
+    margin-bottom: 32px;
     @media screen and (min-width: 768px) {
         & {
             gap: 29px;
+            margin-bottom: 60px;
         }
     }
     
@@ -396,6 +401,7 @@ img {
 
 .img-item {
     overflow: hidden;
+    height: auto;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
 }
 
@@ -468,60 +474,60 @@ img {
 // }
 
 
-.hero-div1 {
-    width: 280px;
-    height: 42px;
-    // border: 1px solid #000;
-    margin: 0 auto;
-}
+// .hero-div1 {
+//     width: 280px;
+//     height: 42px;
+//     // border: 1px solid #000;
+//     margin: 0 auto;
+// }
 
-.hero-div2 {
-    width: 280px;
-    height: 84px;
-    // border: 1px solid #000;
-    margin: 0 auto;
-}
+// .hero-div2 {
+//     width: 280px;
+//     height: 84px;
+//     border: 1px solid #000;
+//     margin: 0 auto;
+// }
 
-.hero-div3 {
-    width: 280px;
-    height: 19px;
-    // border: 1px solid #000;
-    margin: 0 auto;
-}
+// .hero-div3 {
+//     width: 280px;
+//     height: 19px;
+//     border: 1px solid #000;
+//     margin: 0 auto;
+// }
 
-@media screen and (min-width: 768px) {
-    .hero-div1 {
-        width: 336px;
-        height: 56px;
-    }
+// @media screen and (min-width: 768px) {
+//     .hero-div1 {
+//         width: 336px;
+//         height: 56px;
+//     }
 
-    .hero-div2 {
-        width: 400px;
-        height: 114px;
-    }
+//     .hero-div2 {
+//         width: 400px;
+//         height: 114px;
+//     }
 
-    .hero-div3 {
-        width: 400px;
-        height: 21px;
-    }
-}
+//     .hero-div3 {
+//         width: 400px;
+//         height: 21px;
+//     }
+// }
 
-@media screen and (min-width: 1440px) {
-    .hero-div1 {
-        width: 630px;
-        height: 168px;
-    }
+// @media screen and (min-width: 1440px) {
+//     .hero-div1 {
+//         width: 630px;
+//         height: 168px;
+//     }
 
-    .hero-div2 {
-        width: 672px;
-        height: 203px;
-    }
+//     .hero-div2 {
+//         width: 672px;
+//         height: 203px;
+//     }
 
-    .hero-div3 {
-        width: 672px;
-        height: 42px;
-    }
-}
+//     .hero-div3 {
+//         width: 672px;
+//         height: 42px;
+//     }
+// }
 
 .hero__title {
     font-family: 'CaviarDreams';
@@ -533,6 +539,7 @@ img {
     letter-spacing: 00.05em;
 
     color: #2B2B2B;
+    margin-bottom: 32px;
 }
 
 .hero__text {
@@ -550,6 +557,7 @@ img {
         font-size: 24px;
         line-height: 28px;
         letter-spacing: 00.01em;
+        margin-bottom: 60px;
     }
 
     .hero__text {
