@@ -1,24 +1,45 @@
-.wrap {
-  @media screen and (min-width: 321px) and (max-width: 767px) {
-    text-align: center;
+.gallery {
+  font-family: 'CeraPro', sans-serif;
+  padding-top: 92px;
+
+  @include tablet {
+    padding-top: 104px;
   }
 
   @include desktop {
-    padding-left: 149px;
-    padding-right: 149px;
+    padding-top: 190px;
   }
 }
 
-.gallery {
+.gallery__container {
+  position: relative;
+  @include desktop {
+      padding-left: 149px;
+      padding-right: 149px;
+    }
+}
+
+.gallery__title {
+  margin-bottom: 16px;
+  @include fonts(700, 24, 30, null, uppercase);
+  color: $secondaryTextColor;
+
+  @include tablet {
+    margin-bottom: 32px;
+    @include fonts(700, 36, 45, null, uppercase);
+  }
+
+  @include desktop {
+    margin-bottom: 62px;
+    @include fonts(null, 48, 60, null, uppercase);
+  }
+}
+
+.gallery__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
-
-  @media screen and (max-width: 767px) {
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-  }
 
   @include tablet {
     gap: 32px;
@@ -29,45 +50,25 @@
   z-index: 1;
 
   @include tablet {
-    width: calc((100% - 32px) / 2);
+    flex-basis: calc((100% - 32px) / 2);
   }
 }
 
-.gallery__title {
-  width: 220px;
+.gallery__descr {
+  width: 280px;
   margin-top: 8px;
-  font-family: 'CeraPro';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.25;
+  @include fonts(300, 16, 20);
   color: $secondaryTextColor;
 
   @include tablet {
     margin-top: 16px;
-    width: 280px;
+    width: 315px;
   }
 
   @include desktop {
-    font-size: 18px;
-    width: 460px;
+    @include fonts(300, 18, 23);
+    width: 515px;
   }
-}
-
-// .br {
-//   @include tablet {
-//     display: none;
-//   }
-// }
-
-// .br-special {
-//   @include desktop {
-//     display: none;
-//   }
-// }
-
-.container__decor {
-  position: relative;
 }
 
 .gallery__decortop {
@@ -76,26 +77,14 @@
   height: 73.65px;
   left: -29px;
   top: -45px;
-  // background-color: black;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 35px 0px;
-  // transform: rotate(-180deg);
-
-  @include mobile {
-    width: 73.65px;
-    height: 74.05px;
-    left: 100px;
-    top: 110;
-    // background: black;
-    border-radius: 25px 0px;
-  }
 
   @include tablet {
     width: 73.65px;
     height: 74.05px;
     left: 32.1px;
-    top: 140;
-    // background: black;
+    top: 171;
     border-radius: 25px 0px;
   }
 
@@ -112,9 +101,8 @@
   position: absolute;
   width: 73.65px;
   height: 73.65px;
-  left: 248px;
-  top: 244px;
-  // background-color: black;
+  right: -15px;
+  top: 240px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 72px;
 
@@ -134,20 +122,22 @@
     width: 144.18px;
     height: 144.29px;
     left: 1360px;
-    top: 295px;
+    top: 325px;
   }
 }
 
 .gallery__decorright-desktop {
+  display: none;
+
   @include desktop {
+    display: block;
     position: absolute;
     width: 140.9px;
     height: 161px;
-    left: 55px;
-    bottom: 89px;
-    // background: black;
+    left: 1264px;
+    top: 180px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px 0px;
+    border-radius: 0px 0px 72px 0px;
   }
 }
 
@@ -156,41 +146,25 @@
   width: 73.65px;
   height: 73.65px;
   left: -17px;
-  top: 308px;
-  // background-color: black;
+  top: 303px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 25px 0px;
-  transform: rotate(180deg);
-
-  @include mobile {
-    width: 73.65px;
-    height: 74.05px;
-    left: 305px;
-    top: 175px;
-    // background-color: black;
-    border-radius: 0px 0px 35px 0px;
-    transform: rotate(-180deg);
-  }
 
   @include tablet {
     width: 73.65px;
     height: 74.05px;
     left: 662px;
     top: 5px;
-
-    // background-color: black;
     border-radius: 0px 0px 35px 0px;
-    transform: rotate(-180deg);
   }
 
   @include desktop {
-    width: 142.81px;
-    height: 144px;
-    left: 1240px;
-    top: 162px;
+    width: 140px;
+    height: 161px;
+    left: 30px;
+    top: 403px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 72px 0px;
-    transform: rotate(-180deg);
+    border-radius: 0px 0px 72px 0px; 
   }
 }
 
@@ -199,12 +173,13 @@
     position: absolute;
     width: 144px;
     height: 144px;
-    bottom: -100px;
-    left: 1200px;
+    top: 671px;
+    left: 1264px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
     background-image: url(../images/tank-1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
