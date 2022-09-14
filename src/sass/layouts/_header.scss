@@ -150,12 +150,56 @@
     display: none;
   }
  
-  .box1{
+  .header__box{
     position: relative;
-    
   }
-}
+  .mobile__contacts{
+    position: relative;
+    display: inline-block;
+  }
+    .mobile-contacts__content{
+      top: 32px;
+        right: -73px;
+        position: absolute;
+        display: none;
+        min-width: 162px;
+        height: 94px;
+        padding: 20px 5px;
+        background-color: #ffffff;
+        z-index: 6;
+        border-radius: 5px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
 
+    }
+ 
+  .mobile-contacts__content::before{
+    content: '';
+    width: 0;
+    height: 0;
+    // background-color: aqua;
+    position: absolute;
+    top: -14px;
+    right: 67px;
+    border-bottom: 15px solid #ffffff;
+      border-right: 15px solid transparent;
+      border-left: 15px solid transparent;
+  }
+    .mobile-contacts__item:not(:last-child){
+    margin-bottom: 10px;
+    }
+}
+.open-mobile-phone-btn:hover .mobile-contacts__content{
+  display: block;
+}
+.mobile-contacts__link{
+  @include transition(color);
+   
+    color: $primaryTextColor;
+}
+.mobile-contacts__link:hover,
+.mobile-contacts__link:focus{
+  color: $secondaryTextColor;
+}
 
 @media screen and(max-width:767.98px) {
 
