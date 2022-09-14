@@ -7,6 +7,7 @@
 
   @include desktop {
     @include fonts(300, 18, 23);
+    margin-bottom: 24px;
   }
 
   span {
@@ -49,9 +50,9 @@
 
 // }
 .process-description {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
 
   @include tablet {
     // display: flex;
@@ -75,7 +76,7 @@
 }
 
 .process-description__item {
-  max-width: 280px;
+  // max-width: 280px;
 
   @include tablet {
     // display: flex;
@@ -203,7 +204,7 @@
   top: 502.83px;
   // z-index: -1;
   @include mobile {
-    left: 341px;
+    left: 421px;
   }
 
   @include tablet {
@@ -231,7 +232,7 @@
   top: 545.83px;
   z-index: -1;
   @include mobile {
-    left: 63px;
+    left: -43px;
   }
   @include tablet {
     visibility: hidden;
@@ -274,4 +275,9 @@
     visibility: visible;
     border-radius: 72px 0px;
   }
+}
+.process-description__picture {
+  display: flex;
+  justify-content: space-around;
+
 }
