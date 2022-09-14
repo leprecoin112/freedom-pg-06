@@ -1,9 +1,11 @@
 .contacts-hero {
-  font-family: 'CeraPro', 'CaviarDreams', sans-serif;
+  font-family: 'CeraPro', sans-serif;
   padding-top: 92px;
+
   @include tablet {
     padding-top: 104px;
   }
+  
   @include desktop {
     padding-top: 190px;
   }
