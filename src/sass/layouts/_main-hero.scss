@@ -111,6 +111,9 @@ img {
             left: 0px;
         }
     }
+    position: absolute;
+    z-index: 22;
+    border: 1px solid #000;
 }
 
 .hero-box8 {
@@ -526,6 +529,7 @@ img {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    letter-spacing: 00.05em;
 
     color: #2B2B2B;
 }
@@ -544,6 +548,7 @@ img {
     .hero__title {
         font-size: 24px;
         line-height: 28px;
+        letter-spacing: 00.01em;
     }
 
     .hero__text {
@@ -557,6 +562,9 @@ img {
         font-size: 48px;
         line-height: 56px;
         padding-left: 42px;
+        // max-width: 672px;
+        // letter-spacing: 0.03em;
+        letter-spacing: 0.01em;
     }
 
     .hero__text {
