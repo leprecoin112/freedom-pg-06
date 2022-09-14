@@ -9,6 +9,112 @@
   }
 }
 
+.order__wrap-1 {
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 74px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+    top: -20px;
+    right: -15px;
+    @include tablet{
+      display: none;
+    }
+    @include desktop {
+    display: block;
+    width: 136px;
+    height: 144px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+    left: -30px;
+    top: 120px;
+  }
+}
+
+.order__wrap-2 {
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 74px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  top: 55px;
+  left: -15px;
+  border-radius: 25px 0px;
+
+  @include tablet {
+    left: 665px;
+    top: 0px;
+  }
+  @include desktop {
+    left: 1260px;
+    top: -120px;
+    width: 136px;
+    height: 144px;
+    border-radius: 72px 0px;
+  }
+}
+
+.order__wrap-3 {
+    position: absolute;
+    content: "";
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius:0px 25px ;
+    width: 72px;
+    height: 74px;
+    top: 430px;
+    right: -20px;
+    display: block;
+        @include tablet {
+            display: none;
+          }
+        @include desktop {
+          display: none;
+        }
+
+}
+
+.order__wrap-4 {
+  position: absolute;
+  content: "";
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  color: transparent;
+  background-color: transparent;
+  border-radius: 0px 0px 0px 35px;
+  width: 72px;
+  height: 74px;
+  top: 480px;
+  left: -20px;
+  z-index: -2;
+  display: block;
+  @include tablet {
+      display: none;
+    }
+  
+    @include desktop {
+      display: none;
+    }
+}
+
+
+.order__wrap-5 {
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 74px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    top: 750px;
+    right: -15px;
+    border-radius: 25px 0px;
+      @include tablet {
+          display: none;
+        }
+      
+        @include desktop {
+          display: none;
+        }
+}
+
 .order {
   margin-bottom: 60px;
   @include mobile {
@@ -60,8 +166,8 @@
   outline: none;
   border-bottom: 1px solid $secondaryTextColor;
   padding-bottom: 4px;
-  color: $primaryTextColor;
-
+  background-color: transparent;
+  cursor: pointer;
   @include tablet {
     width: 400px;
   }
@@ -108,6 +214,8 @@
   padding: 22px 20px;
   resize: none;
   margin-bottom: 4px;
+  outline: none;
+  cursor: pointer;
   &:focus,
   &:hover {
     border-color: $primaryTextColor;
@@ -298,6 +406,7 @@
     }
   }
   @include desktop {
+    margin-right: 2px;
     &:not(:last-child) {
       margin-bottom: 18px;
     }
