@@ -3,8 +3,16 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  margin-bottom: 40px;
+
   @include tablet {
     justify-content: left;
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    margin-bottom: 80px;
+  }
+  @include tablet {
   }
 }
 
@@ -31,17 +39,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px 20px;
-  margin-bottom: 40px;
 
   @include tablet {
     width: 100%;
     flex-wrap: nowrap;
     gap: 32px;
-    margin-bottom: 60px;
-  }
-
-  @include desktop {
-    margin-bottom: 80px;
   }
 }
 

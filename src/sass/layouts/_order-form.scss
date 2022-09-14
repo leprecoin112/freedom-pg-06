@@ -16,6 +16,10 @@
     flex-direction: column;
     margin-bottom: 0;
   }
+
+  @include desktop {
+    width: 555px;
+  }
 }
 
 .form__button-form {
@@ -65,8 +69,8 @@
   appearance: none;
   outline: none;
   background-color: transparent;
+  padding-bottom: 4px;
   cursor: pointer;
-  font-family: 'CeraPro';
   @include fonts(400, 16, 20);
   @include desktop {
     @include fonts(400, 18, 20);
@@ -118,8 +122,8 @@
 
   @include desktop {
     flex-direction: column;
-    align-items: flex-end;
     gap: 30px;
+    align-items: flex-end;
   }
 }
 
@@ -129,7 +133,6 @@
   @include mobile {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
 
@@ -145,8 +148,115 @@
   @include desktop {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
     gap: 30px;
+    text-align: right;
+    align-items: flex-end;
   }
+}
+
+.contacts-fom__email-fom {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+  }
+}
+
+.contacts-fom__time-fom {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+}
+
+.contacts-fom__time-fom > .contacts-fom__list {
+  @include mobile {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    align-items: flex-end;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.contacts__mozaik {
+  width: 438px;
+  height: 278px;
+  flex-wrap: wrap;
+  gap: 10px;
+  display: none;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  @include desktop {
+    display: flex;
+  }
+}
+
+.contacts__mozaik-1 {
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 0 72px 0 0;
+}
+
+.contacts__mozaik-2 {
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 0px 0px 0px 72px;
+}
+
+.contacts__mozaik-3 {
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 72px 0px;
+}
+
+.contacts__mozaik-4 {
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 72px 0px;
+}
+
+.contacts__mozaik-5 {
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 72px;
+}
+
+.contacts__mozaik-6 {
+  width: 139px;
+  height: 139px;
+  background-image: url(/src/images/mozaik.jpg);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 437px 293px;
+  border-radius: 0px 0px 72px 0px;
 }

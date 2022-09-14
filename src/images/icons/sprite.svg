@@ -28,14 +28,14 @@
 <path d="M16.849 24.373c-0.794 0.873-2.166 0.873-2.959 0l-13.21-14.527c-1.168-1.285-0.257-3.346 1.48-3.346h26.421c1.737 0 2.648 2.061 1.48 3.346l-13.211 14.527z"></path>
 </symbol>
 <symbol id="icon-more-photo-loader" viewBox="0 0 32 32">
-<path fill="none" stroke="#487996" stroke-width="0.7111" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #487996)" d="M16 5.333v3.048"></path>
-<path fill="none" stroke="#487996" stroke-width="0.7111" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #487996)" d="M23.619 8.381l-2.286 2.286"></path>
-<path fill="none" stroke="#487996" stroke-width="0.7111" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #487996)" d="M8.381 8.381l2.286 2.286"></path>
-<path fill="none" stroke="#487996" stroke-width="0.7111" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #487996)" d="M16 26.666v-3.048"></path>
-<path fill="none" stroke="#487996" stroke-width="0.7111" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #487996)" d="M23.619 23.619l-2.286-2.286"></path>
-<path fill="none" stroke="#487996" stroke-width="0.7111" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #487996)" d="M8.381 23.619l2.286-2.286"></path>
-<path fill="none" stroke="#487996" stroke-width="0.7111" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #487996)" d="M5.333 16h3.048"></path>
-<path fill="none" stroke="#487996" stroke-width="0.7111" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #487996)" d="M23.619 16h3.048"></path>
+<path d="M16 5.333v3.048"></path>
+<path d="M23.619 8.381l-2.286 2.286"></path>
+<path d="M8.381 8.381l2.286 2.286"></path>
+<path d="M16 26.666v-3.048"></path>
+<path d="M23.619 23.619l-2.286-2.286"></path>
+<path d="M8.381 23.619l2.286-2.286"></path>
+<path d="M5.333 16h3.048"></path>
+<path d="M23.619 16h3.048"></path>
 </symbol>
 </defs>
 </svg>
