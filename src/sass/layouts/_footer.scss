@@ -1,6 +1,7 @@
 /*=================== FOOTER =========================*/
 .footer {
   background-color: $secondaryBgColor;
+  box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
   &__img {
     width: 192px;
     height: 48px;
