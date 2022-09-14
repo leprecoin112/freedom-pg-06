@@ -193,7 +193,8 @@
 }
 .mobile-contacts__link{
   @include transition(color);
-   
+  font-family: 'CeraPro';
+    font-style: normal;
     color: $primaryTextColor;
 }
 .mobile-contacts__link:hover,
