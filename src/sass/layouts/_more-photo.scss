@@ -90,12 +90,13 @@
     }
 
     &__icon {
-      width: 11px;
-      height: 11px;
+      width: 45px;
+      height: 45px;
+      fill: white;
 
       &:hover,
       &:focus {
-        fill: red;
+        fill: violet;
       }
       @include tablet {
         width: 15px;
@@ -168,7 +169,7 @@
     //   fill: ;
       &:hover,
       &:focus {
-        fill: $secondaryTextColor;
+        fill: violet;
       }
       @include tablet{ 
         width: 26px;
