@@ -5,13 +5,12 @@
     <h2 class="section__title-primary">БІЛЬШЕ ФОТО</h2>
     <ul class="more-photo">
       <li class="more-photo__item">
-        <picture>
-          <source
+        <picture onclick="openModal();currentSlide(1)">
+          <source media="(min-width: 1440px)" 
             srcset="
               ./images/more-photo/galery-1-desk.jpg    1x,
               ./images/more-photo/galery-1-desk@2x.jpg 2x
-            "
-            media="(min-width: 1440px)" />
+            "/>
           <source
             srcset="
               ./images/more-photo/galery-1-tab.jpg    1x,
@@ -29,7 +28,7 @@
         /></picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(2)">
           <source
             srcset="
               ./images/more-photo/galery-2-desk.jpg    1x,
@@ -56,7 +55,7 @@
         </picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(3)">
           <source
             srcset="
               ./images/more-photo/galery-3-desk.jpg    1x,
@@ -83,7 +82,7 @@
         </picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(4)">
           <source
             srcset="
               ./images/more-photo/galery-4-desk.jpg    1x,
@@ -103,7 +102,7 @@
         </picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(5)">
           <source
             srcset="
               ./images/more-photo/galery-5-desk.jpg    1x,
@@ -123,7 +122,7 @@
         </picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(6)">
           <source
             srcset="
               ./images/more-photo/galery-6-desk.jpg    1x,
@@ -143,7 +142,7 @@
         </picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(7)">
           <source
             srcset="
               ./images/more-photo/galery-7-desk.jpg    1x,
@@ -166,7 +165,7 @@
         </picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(8)">
           <source
             srcset="
               ./images/more-photo/galery-8-desk.jpg    1x,
@@ -186,7 +185,7 @@
         </picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(9)">
           <source
             srcset="
               ./images/more-photo/galery-9-desk.jpg    1x,
@@ -206,7 +205,7 @@
         </picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(10)">
           <source
             srcset="
               ./images/more-photo/galery-10-desk.jpg    1x,
@@ -226,7 +225,7 @@
         </picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(11)">
           <source
             srcset="
               ./images/more-photo/galery-11-desk.jpg    1x,
@@ -246,7 +245,7 @@
         </picture>
       </li>
       <li class="more-photo__item">
-        <picture>
+        <picture onclick="openModal();currentSlide(12)">
           <source
             srcset="
               ./images/more-photo/galery-12-desk.jpg    1x,
@@ -271,6 +270,127 @@
     </svg>
 
     <!--======== Backdrop ========-->
-    <div class="backdrop"></div>
+    <div id="myModal" class="myModal">
+      <span class="close cursor" onclick="closeModal()">
+        <svg class="close__icon" width="45" height="45">
+          <use href="./images/icons/sprite.svg#cancel-icon"></use>
+        </svg>
+      </span>
+
+      <div class="modal-content">  
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img class="slider-modal__img" srcset="
+                  ./images/more-photo/galery-1-mob@2x.jpg   320w,
+                  ./images/more-photo/galery-1-tab@2x.jpg   768w,
+                  ./images/more-photo/galery-1-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200vw) 50vw, (min-width: 768vw) 50vw, (min-width: 320px) 70vw, 50vw"
+                src="./images/more-photo/galery-1-desk@2x.jpg" alt="3д моделі" />
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img" srcset="
+                ./images/more-photo/galery-2-mob@2x.jpg   320w,
+                ./images/more-photo/galery-2-tab@2x.jpg   768w,
+                ./images/more-photo/galery-2-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70vw, 100vw"
+                src="./images/more-photo/galery-2-desk@2x.jpg" alt="Архітектура"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img-big" srcset="
+                ./images/more-photo/galery-3-mob@2x.jpg   320w,
+                ./images/more-photo/galery-3-tab@2x.jpg   768w,
+                ./images/more-photo/galery-3-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 400px, (min-width: 768px) 300px, (min-width: 320px) 70vw, 100vw"
+                src="./images/more-photo/galery-3-desk@2x.jpg" alt="Робот" />
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img-big" srcset="
+            ./images/more-photo/galery-4-tab@2x.jpg   768w,
+            ./images/more-photo/galery-4-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 400px, (min-width: 768px) 300px, (min-width: 320px) 70vw, 100vw"
+              src="./images/more-photo/galery-4-desk@2x.jpg" alt="Череп" />
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img" srcset="
+            ./images/more-photo/galery-5-tab@2x.jpg   768w,
+            ./images/more-photo/galery-5-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70vw, 100vw"
+              src="./images/more-photo/galery-5-desk@2x.jpg" alt="Танк" />
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img" srcset="
+            ./images/more-photo/galery-6-tab@2x.jpg   768w,
+            ./images/more-photo/galery-6-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70vw, 100vw"
+                src="./images/more-photo/galery-6-desk@2x.jpg" alt="Лампа"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img" srcset="
+            ./images/more-photo/galery-7-tab@2x.jpg   768w,
+            ./images/more-photo/galery-7-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70vw, 100vw"
+                src="./images/more-photo/galery-7-desk@2x.jpg" alt="Спортивна машина"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img" srcset="
+            ./images/more-photo/galery-8-tab@2x.jpg   768w,
+            ./images/more-photo/galery-8-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70vw, 100vw"
+                src="./images/more-photo/galery-8-desk@2x.jpg" alt="Башня"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img-big" srcset="
+            ./images/more-photo/galery-9-tab@2x.jpg   768w,
+            ./images/more-photo/galery-9-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70vw, 100vw"
+                src="./images/more-photo/galery-9-desk@2x.jpg" alt="Нічник гриб"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img-big" srcset="
+            ./images/more-photo/galery-10-tab@2x.jpg   768w,
+            ./images/more-photo/galery-10-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70vw, 100vw"
+                src="./images/more-photo/galery-10-desk@2x.jpg" alt="Аерозоль"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img" srcset="
+            ./images/more-photo/galery-11-tab@2x.jpg   768w,
+            ./images/more-photo/galery-11-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70vw, 100vw"
+                src="./images/more-photo/galery-11-desk@2x.jpg" alt="Кібертрак"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slider-modal__img" srcset="
+            ./images/more-photo/galery-12-tab@2x.jpg   768w,
+            ./images/more-photo/galery-12-desk@2x.jpg 1200w
+                " sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70vw, 100vw"
+                src="./images/more-photo/galery-12-desk@2x.jpg" alt="Вазон"/>
+          </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">
+              <svg class="prev__icon">
+                <use href="./images/icons/sprite.svg#prev-icon"></use>
+              </svg>
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+              <svg class="next__icon">
+                <use href="./images/icons/sprite.svg#next-icon"></use>
+              </svg>
+  
+            </a>
+    </div>
+  
   </div>
+  
 </section>
