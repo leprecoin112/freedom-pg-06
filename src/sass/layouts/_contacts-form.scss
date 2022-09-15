@@ -10,18 +10,18 @@
 }
 
 .order__wrap-1 {
-    position: absolute;
-    content: "";
-    width: 72px;
-    height: 74px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px;
-    top: -20px;
-    right: -15px;
-    @include tablet{
-      display: none;
-    }
-    @include desktop {
+  position: absolute;
+  content: '';
+  width: 72px;
+  height: 74px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
+  top: -20px;
+  right: -15px;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
     display: block;
     width: 136px;
     height: 144px;
@@ -34,7 +34,7 @@
 
 .order__wrap-2 {
   position: absolute;
-  content: "";
+  content: '';
   width: 72px;
   height: 74px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -56,27 +56,26 @@
 }
 
 .order__wrap-3 {
-    position: absolute;
-    content: "";
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius:0px 25px ;
-    width: 72px;
-    height: 74px;
-    top: 430px;
-    right: -20px;
-    display: block;
-        @include tablet {
-            display: none;
-          }
-        @include desktop {
-          display: none;
-        }
-
+  position: absolute;
+  content: '';
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 25px;
+  width: 72px;
+  height: 74px;
+  top: 430px;
+  right: -20px;
+  display: block;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
 }
 
 .order__wrap-4 {
   position: absolute;
-  content: "";
+  content: '';
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   color: transparent;
   background-color: transparent;
@@ -88,31 +87,30 @@
   z-index: -2;
   display: block;
   @include tablet {
-      display: none;
-    }
-  
-    @include desktop {
-      display: none;
-    }
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
 }
 
-
 .order__wrap-5 {
-    position: absolute;
-    content: "";
-    width: 72px;
-    height: 74px;
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    top: 750px;
-    right: -15px;
-    border-radius: 25px 0px;
-      @include tablet {
-          display: none;
-        }
-      
-        @include desktop {
-          display: none;
-        }
+  position: absolute;
+  content: '';
+  width: 72px;
+  height: 74px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  top: 750px;
+  right: -15px;
+  border-radius: 25px 0px;
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .order {
@@ -255,7 +253,7 @@
   @include tablet {
     bottom: 55px;
     left: 360px;
-    }
+  }
   @include desktop {
     left: 515px;
     bottom: 35px;

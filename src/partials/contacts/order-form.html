@@ -1,80 +1,87 @@
 <section class="section--padding-bottom">
-    <div class="order__wrap container">
-      <div class="order__wrap-1"></div>
-      <div class="order__wrap-2"></div>
-      <div class="order__wrap-3"></div>
-      <div class="order__wrap-4"></div>
-      <div class="order__wrap-5"></div>
-        <div class="order">
-    <h2 class="order__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
-    <form class="order__form">
+  <div class="order__wrap container">
+    <div class="order__wrap-1"></div>
+    <div class="order__wrap-2"></div>
+    <div class="order__wrap-3"></div>
+    <div class="order__wrap-4"></div>
+    <div class="order__wrap-5"></div>
+    <div class="order">
+      <h2 class="order__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+      <form class="order__form">
         <div class="order__form-name">
-        <input
-        class="order__input"
-        type="text"
-        name="user-name"
-        id="user-name"
-        placeholder=" "
-        required
-      />
-      <label class="order__label" for="user-name">Ім’я</label>
-      </div>
-      <div class="order__form-name">
-        <input
-        type="email"
-        class="order__input"
-        name="user-email"
-        id="user-email"
-        placeholder=" "
-        required
-      />
-      <label class="order__label" for="user-email">Email</label>
+          <input
+            placeholder=" "
+            class="order__input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            required
+          />
+          <label class="order__label" for="user-name">Ім’я</label>
+        </div>
+        <div class="order__form-name">
+          <input
+            placeholder=" "
+            type="email"
+            class="order__input"
+            name="user-email"
+            id="user-email"
+            required
+          />
+          <label class="order__label" for="user-email">Email</label>
+        </div>
+
+        <div class="order__textaria">
+          <label class="order__label-text" for="user-text">Повідомлення</label>
+          <textarea
+            class="order__text"
+            name="user-text"
+            id="user-text"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+          <label class="atatch" for="atatch">
+            <svg class="svg" width="21" height="20">
+              <use href="./images/symbol-defs.svg#icon-atatch"></use>
+            </svg>
+          </label>
+          <input
+            class="form__label-file visually-hidden"
+            type="file"
+            id="atatch"
+          />
+          <p class="textaria__text">
+            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+          </p>
+        </div>
+        <button type="submit" class="form__button button">Відправити</button>
+      </form>
     </div>
 
-      <div class="order__textaria">
-        <label class="order__label-text" for="user-text">Повідомлення</label>
-        <textarea
-          class="order__text"
-          name="user-text"
-          id="user-text"
-          placeholder="Залишіть своє повідомлення"
-        ></textarea>
-        <label class="atatch" for="atatch">
-          <svg class="svg" width="21" height="20">
-            <use href="./images/symbol-defs.svg#icon-atatch"></use>
-          </svg>
-        </label>
-        <input
-          class="form__label-file visually-hidden"
-          type="file"
-          id="atatch"
-        />
-        <p class="textaria__text">
-        *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-      </p>
+    <div class="contacts-fom">
+      <div class="contacts-fom__wrap">
+        <div class="contacts-fom__tel left">
+          <h2 class="contacts-fom__title">ТЕЛЕФОНИ</h2>
+          <ul class="contacts-fom__list">
+            <li class="contacts-fom__item">
+              <a class="contacts-fom__phone" href="tel:+380957384551"
+                >+38 (095) -73-84-551</a
+              >
+            </li>
+            <li class="contacts-fom__item">
+              <a class="contacts-fom__phone" href="tel:+380957384551"
+                >+38 (098) -00-25-235</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-fom__email left">
+          <h2 class="contacts-fom__title">Email</h2>
+          <a class="contacts-fom__pmail" href="mailto:3dfreedom.info@gmail.com"
+            >3dfreedom.info@gmail.com</a
+          >
+        </div>
       </div>
-      <button type="submit" class="form__button button">Відправити</button>
-    </form>
-  </div>
-
-  <div class="contacts-fom">
-    <div class="contacts-fom__wrap">
-    <div class="contacts-fom__tel left">
-      <h2 class="contacts-fom__title">ТЕЛЕФОНИ</h2>
-      <ul class="contacts-fom__list">
-        <li class="contacts-fom__item">
-          <a  class="contacts-fom__phone" href="tel:+380957384551">+38 (095) -73-84-551</a>
-        </li>
-        <li class="contacts-fom__item">
-          <a  class="contacts-fom__phone" href="tel:+380957384551">+38 (098) -00-25-235</a></li>
-      </ul>
-    </div>
-    <div class="contacts-fom__email left">
-      <h2 class="contacts-fom__title">Email</h2>
-        <a class="contacts-fom__pmail" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
-    </div>
-    </div>
-    <div class="contacts-fom__time left">
+      <div class="contacts-fom__time left">
         <h2 class="contacts-fom__title">Робочий час</h2>
         <ul class="contacts-fom__list">
           <li class="contacts-fom__item">Пн-Пт:</li>
@@ -84,6 +91,7 @@
           <li class="contacts-fom__item">Сб, Нд:</li>
           <li class="contacts-fom__item">з 10:00 до 17:00</li>
         </ul>
-  </div>
+      </div>
+    </div>
   </div>
 </section>
